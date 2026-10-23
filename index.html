@@ -1,0 +1,1732 @@
+<!doctype html>
+<!--
+  HertaCloud · site institucional (página única)
+  Conteúdo: Business Plan, Marketing/Mídia Kit e Abertura/Backoffice (v1.0, 22/10/2026).
+  Visual: identidade Fluxo e peças de Instagram aprovadas (fundo azul profundo, rocha vulcânica,
+  linhas topográficas turquesa e pontos de energia laranja). Propostas de produto: PROPOSTAS-DE-PRODUTOS.md.
+
+  ANTES DE PUBLICAR
+  1. Preencher HERTA_CONFIG (no <script> ao final): endpoint do formulário e/ou e-mail,
+     WhatsApp e Instagram — somente canais já operacionais e testados.
+  2. Confirmar a marca (INPI) e o domínio antes de divulgar; não exibir CNPJ antes da emissão.
+  3. A logo (#i-logo) foi vetorizada a partir do PNG aprovado; trocar pelo vetor mestre oficial quando existir.
+  4. Publicar a política de privacidade validada pelo jurídico (os formulários coletam dados pessoais).
+  5. Billing e Gateway: manter "Em piloto"/"Em breve" até demonstrar recursos e definir suporte, contrato e preço.
+     Gateway: validar com o jurídico o enquadramento regulatório (Lei 12.865/2013 e normas do BCB)
+     e o escopo PCI DSS se dados de cartão passarem pelos sistemas da HertaCloud.
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HertaCloud | Proteção de dados e inteligência de negócios</title>
+<meta name="description" content="A HertaCloud combina proteção de dados gerenciada, testes de recuperação documentados e inteligência de negócios. Em breve: Herta Gateway, nosso gateway de pagamento.">
+<meta name="theme-color" content="#0F1C2C">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="HertaCloud | Proteção na base. Inteligência para crescer.">
+<meta property="og:description" content="Dados protegidos. Informação organizada. Decisões com mais clareza.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='176 176 912 912'%3E%3Crect x='176' y='176' width='912' height='912' rx='200' fill='%230F1C2C'/%3E%3Cpath fill='%23FEFEFE' d='M441.2 339.0 443.0 338.3 445.0 339.3 445.7 345.0 445.3 578.0 444.0 579.0 260.4 471.0 255.0 466.5 253.2 462.0 253.9 459.0 257.0 455.7Z M583.4 411.0 592.0 410.4 602.0 411.5 616.0 416.6 673.0 449.8 703.4 469.0 704.5 494.0 705.1 688.0 705.1 731.0 704.0 732.3 547.9 638.0 549.3 448.0 550.1 440.0 553.6 429.0 560.0 421.4 572.0 413.7Z M250.2 649.0 251.0 648.1 255.7 657.0 260.9 663.0 276.0 674.4 437.9 770.0 438.1 936.0 437.0 950.3 435.0 950.9 430.0 948.2 251.7 839.0 249.9 834.0Z M918.9 709.0 922.0 708.9 929.0 711.0 1003.0 755.7 1006.3 759.0 1009.3 767.0 1009.2 796.0 1007.3 803.0 1003.0 809.7 999.0 813.4 945.0 846.2 935.0 850.8 927.0 852.5 916.0 852.4 903.0 849.2 888.0 842.3 790.6 784.0 904.0 715.7 912.0 711.1Z'/%3E%3Cpath fill='%2302B2BF' d='M741.0 314.0 753.0 313.2 768.7 314.0 785.0 317.7 798.4 324.0 999.0 452.0 1011.0 460.5 1012.1 463.0 1011.6 465.0 936.9 511.0 910.0 525.7 865.0 553.1 858.0 556.0 851.0 556.5 844.0 555.0 840.3 553.0 711.0 472.0 624.0 420.0 610.0 413.6 597.0 410.7 588.0 410.3 574.0 412.9 573.6 412.0 575.9 410.0 602.4 392.0 703.0 327.9 719.0 319.7Z M251.9 463.0 253.0 462.7 254.0 465.4 258.0 469.5 274.0 479.3 494.0 608.5 547.0 638.0 889.2 843.0 910.0 851.5 921.0 853.0 934.0 851.5 934.8 852.0 934.2 853.0 799.0 935.0 785.0 943.0 775.0 947.2 759.0 950.4 743.0 949.2 725.0 943.1 710.0 935.2 606.7 873.0 447.0 774.2 277.0 675.0 261.1 663.0 256.0 657.5 252.0 651.0 249.8 643.0 249.7 473.0Z'/%3E%3Cpath fill='%23FE792A' d='M1009.3 466.0 1011.0 465.7 1012.0 467.0 1012.9 473.0 1012.5 563.0 1011.0 569.9 1006.0 576.8 993.0 585.3 990.0 586.3 934.0 621.2 928.0 621.8 926.0 618.9 925.5 616.0 926.1 517.0Z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root {
+  --bg: #0F1C2C;
+  --bg-deep: #0A1520;
+  --bg-footer: #07101A;
+  --surface: #13233A;
+  --surface-2: #192D47;
+  --glass: linear-gradient(160deg, rgba(255, 255, 255, .055), rgba(255, 255, 255, .015));
+  --teal: #24C9BD;
+  --teal-hi: #63E4DA;
+  --teal-deep: #007F82;
+  --orange: #F36B38;
+  --orange-hi: #FF9C74;
+  --lava: #FF7A30;
+  --blue: #52B6F5;
+  --alert: #F2643A;
+  --text: #F3F5F4;
+  --text-soft: rgba(243, 245, 244, .74);
+  --text-mute: rgba(243, 245, 244, .55);
+  --line: rgba(243, 245, 244, .10);
+  --line-strong: rgba(243, 245, 244, .18);
+  --radius: 16px;
+  --radius-lg: 24px;
+  --font-head: "Outfit", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace;
+  --container: 1180px;
+  --header-h: 74px;
+  --check-teal: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6.2 5 8.5l4.5-5' fill='none' stroke='%2324C9BD' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --check-navy: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6.2 5 8.5l4.5-5' fill='none' stroke='%230F1C2C' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --check-petrol: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6.2 5 8.5l4.5-5' fill='none' stroke='%23007F82' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --cross-orange: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='m3.5 3.5 5 5m0-5-5 5' fill='none' stroke='%23FF9C74' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--header-h) + 12px); background: var(--bg); }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+body {
+  margin: 0; font-family: var(--font-body); font-size: 1rem; line-height: 1.6;
+  color: var(--text); background: var(--bg); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.08; margin: 0 0 .55em; letter-spacing: -.025em; font-weight: 700; }
+h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); }
+h2 { font-size: clamp(2rem, 4vw, 3.1rem); }
+h3 { font-size: 1.2rem; font-weight: 600; letter-spacing: -.01em; line-height: 1.25; }
+p { margin: 0 0 1em; }
+::selection { background: rgba(36, 201, 189, .35); }
+:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; border-radius: 8px; }
+.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 24px; position: relative; }
+@media (max-width: 600px) { .container { padding: 0 16px; } }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip-link { position: absolute; left: 16px; top: -60px; z-index: 100; background: var(--teal); color: var(--bg); padding: 10px 16px; border-radius: 10px; font-weight: 600; text-decoration: none; }
+.skip-link:focus { top: 12px; }
+.i { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.hl { color: var(--teal); }
+.hl-orange { color: var(--orange-hi); }
+
+/* ---------- Sections ---------- */
+.section { position: relative; padding: clamp(72px, 10vw, 124px) 0; background: var(--bg); overflow: hidden; }
+.section--deep { background: var(--bg-deep); }
+.section + .section::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(36, 201, 189, .28), transparent);
+}
+.section-head { max-width: 760px; margin-bottom: clamp(40px, 5vw, 60px); position: relative; }
+.section-head--center { margin-inline: auto; text-align: center; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px; margin: 0 0 18px;
+  font-family: var(--font-head); font-size: .8rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--teal);
+}
+.eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 12px rgba(255, 122, 48, .8); }
+.lead { font-family: var(--font-head); font-weight: 300; font-size: clamp(1.15rem, 1.8vw, 1.4rem); line-height: 1.45; color: var(--text-soft); }
+.muted { color: var(--text-soft); }
+.disclaimer { font-size: .85rem; color: var(--text-mute); margin-top: 20px; }
+.tag-illus { font-size: .72rem; color: var(--text-mute); letter-spacing: .02em; }
+.deco { position: absolute; pointer-events: none; width: 420px; height: 420px; fill: none; stroke: var(--teal); stroke-width: 1.2; opacity: .45; }
+.deco--tr { top: -40px; right: -80px; }
+.deco--bl { bottom: -60px; left: -120px; transform: rotate(180deg); }
+@media (max-width: 760px) { .deco { opacity: .25; } }
+
+/* ---------- Buttons & badges ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 15px 26px; border-radius: 999px; border: 1.5px solid transparent;
+  font: 600 1rem/1.2 var(--font-head); letter-spacing: .005em; text-decoration: none; cursor: pointer;
+  transition: transform .15s ease, background-color .15s ease, border-color .15s ease, color .15s ease, box-shadow .2s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn .i { width: 20px; height: 20px; }
+.btn--primary { background: var(--teal); color: var(--bg); box-shadow: 0 12px 34px -10px rgba(36, 201, 189, .7); }
+.btn--primary:hover { background: var(--teal-hi); box-shadow: 0 14px 40px -8px rgba(36, 201, 189, .8); }
+.btn--outline { border-color: var(--teal); color: var(--text); box-shadow: 0 0 22px -6px rgba(36, 201, 189, .45), inset 0 0 18px -10px rgba(36, 201, 189, .6); }
+.btn--outline:hover { color: var(--teal-hi); border-color: var(--teal-hi); }
+.btn--outline .i { color: var(--teal); }
+.btn--ghost { border-color: var(--line-strong); color: var(--text); }
+.btn--ghost:hover { border-color: var(--teal); color: var(--teal-hi); }
+.btn--orange { background: var(--orange); color: var(--bg); box-shadow: 0 12px 34px -10px rgba(243, 107, 56, .75); }
+.btn--orange:hover { background: var(--orange-hi); }
+.btn--sm { padding: 11px 20px; font-size: .94rem; }
+.btn__sep { width: 1px; align-self: stretch; background: rgba(15, 28, 44, .35); }
+.btn[disabled] { opacity: .6; cursor: progress; transform: none; }
+
+.badge {
+  display: inline-flex; align-items: center; gap: 6px; padding: 4px 11px; border-radius: 999px;
+  font: 600 .74rem/1.4 var(--font-head); letter-spacing: .03em; white-space: nowrap;
+  background: rgba(36, 201, 189, .13); color: var(--teal); border: 1px solid rgba(36, 201, 189, .25);
+}
+.badge--orange { background: var(--orange); color: var(--bg); border-color: transparent; box-shadow: 0 0 16px -2px rgba(243, 107, 56, .6); }
+.badge--live::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: pulse 1.8s ease-in-out infinite; }
+.badge--xs { padding: 2px 8px; font-size: .68rem; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+
+/* ---------- Announcement ---------- */
+.announce { background: var(--bg-footer); font-size: .9rem; border-bottom: 1px solid var(--line); }
+.announce[hidden] { display: none; }
+.announce__inner { display: flex; align-items: center; justify-content: center; gap: 12px; padding-top: 9px; padding-bottom: 9px; padding-right: 48px; }
+.announce p { margin: 0; color: var(--text-soft); }
+.announce a { color: var(--teal); font-weight: 600; text-underline-offset: 3px; }
+.announce__close {
+  position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+  width: 32px; height: 32px; border: 0; border-radius: 8px; background: transparent; color: var(--text-soft); font-size: 1.3rem; line-height: 1; cursor: pointer;
+}
+.announce__close:hover { background: rgba(243, 245, 244, .08); color: var(--text); }
+@media (max-width: 600px) { .announce__inner { justify-content: flex-start; font-size: .85rem; } .announce .badge { display: none; } }
+
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(15, 28, 44, .82); -webkit-backdrop-filter: saturate(1.4) blur(14px); backdrop-filter: saturate(1.4) blur(14px);
+  border-bottom: 1px solid var(--line); transition: box-shadow .2s ease, background-color .2s ease;
+}
+.site-header.is-scrolled { background: rgba(15, 28, 44, .95); box-shadow: 0 10px 30px rgba(0, 0, 0, .35); }
+.site-header__inner { display: flex; align-items: center; justify-content: space-between; height: var(--header-h); gap: 24px; }
+.logo { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text); }
+.logo__mark { width: 42px; height: 42px; }
+.logo__word { font-family: var(--font-head); font-weight: 700; font-size: 1.42rem; letter-spacing: -.02em; }
+.logo__word span { color: var(--teal); font-weight: 400; }
+.site-nav { display: flex; align-items: center; gap: 28px; }
+.site-nav ul { display: flex; align-items: center; gap: 22px; list-style: none; margin: 0; padding: 0; }
+.site-nav ul a { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--text-soft); font: 500 .96rem var(--font-head); transition: color .15s; }
+.site-nav ul a:hover, .site-nav ul a[aria-current="true"] { color: var(--text); }
+.nav-toggle { display: none; width: 44px; height: 44px; border: 1px solid var(--line-strong); border-radius: 12px; background: transparent; color: var(--text); cursor: pointer; align-items: center; justify-content: center; }
+.nav-toggle__bars, .nav-toggle__bars::before, .nav-toggle__bars::after { display: block; width: 18px; height: 2px; border-radius: 2px; background: currentColor; transition: transform .2s ease; }
+.nav-toggle__bars { position: relative; }
+.nav-toggle__bars::before, .nav-toggle__bars::after { content: ""; position: absolute; left: 0; }
+.nav-toggle__bars::before { top: -6px; }
+.nav-toggle__bars::after { top: 6px; }
+.nav-toggle[aria-expanded="true"] .nav-toggle__bars { background: transparent; }
+.nav-toggle[aria-expanded="true"] .nav-toggle__bars::before { transform: translateY(6px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle__bars::after { transform: translateY(-6px) rotate(-45deg); }
+@media (max-width: 1080px) {
+  .nav-toggle { display: inline-flex; }
+  .site-nav {
+    display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0;
+    padding: 8px 16px 24px; background: var(--bg); border-bottom: 1px solid var(--line); box-shadow: 0 24px 40px rgba(0, 0, 0, .4);
+  }
+  .site-nav.is-open { display: flex; }
+  .site-nav ul { flex-direction: column; align-items: stretch; gap: 0; }
+  .site-nav ul a { display: flex; padding: 14px 4px; border-bottom: 1px solid var(--line); font-size: 1.05rem; }
+  .site-nav .btn { margin-top: 18px; }
+}
+
+/* ---------- Hero ---------- */
+.hero { position: relative; overflow: hidden; padding: clamp(56px, 8vw, 96px) 0 clamp(150px, 16vw, 210px); background: var(--bg); }
+.hero::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(720px 480px at 78% 30%, rgba(36, 201, 189, .13), transparent 62%), radial-gradient(600px 300px at 15% 0%, rgba(0, 127, 130, .14), transparent 60%);
+}
+.hero__rocks { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: clamp(200px, 26vw, 330px); pointer-events: none; }
+.hero__grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.12fr .88fr; gap: 32px; align-items: center; }
+.hero h1 { margin-bottom: 26px; font-size: clamp(2.5rem, 5.4vw, 4.3rem); }
+.hero__lines { list-style: none; margin: 0 0 34px; padding: 0; font-family: var(--font-head); font-weight: 300; font-size: clamp(1.15rem, 1.9vw, 1.45rem); line-height: 1.5; color: var(--text); }
+.hero__lines li { display: flex; align-items: center; gap: 12px; }
+.hero__lines li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); box-shadow: 0 0 10px var(--teal); flex: none; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: 14px; }
+.hero__visual { position: relative; aspect-ratio: 640 / 560; margin-right: -40px; }
+.hero__art { width: 100%; height: 100%; overflow: visible; -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 22%); mask-image: linear-gradient(90deg, transparent 0, #000 22%); }
+.flow-dash { animation: dash 26s linear infinite; }
+@keyframes dash { to { stroke-dashoffset: -480; } }
+@media (max-width: 980px) {
+  .hero__grid { grid-template-columns: 1fr; }
+  .hero__visual { max-width: 560px; margin: -10px auto 0; width: 100%; }
+  .hero__art { -webkit-mask-image: none; mask-image: none; }
+}
+
+/* ---------- Glass cards ---------- */
+.glass {
+  background: var(--glass), var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .05), 0 24px 50px -30px rgba(0, 0, 0, .7);
+}
+.check-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.check-list li { display: flex; gap: 12px; align-items: flex-start; }
+.check-list li::before { content: ""; width: 22px; height: 22px; margin-top: 1px; border-radius: 50%; flex: none; background: rgba(36, 201, 189, .14) var(--check-teal) center / 12px no-repeat; box-shadow: inset 0 0 0 1px rgba(36, 201, 189, .3); }
+.x-list li::before { background: rgba(243, 107, 56, .12) var(--cross-orange) center / 12px no-repeat; box-shadow: inset 0 0 0 1px rgba(243, 107, 56, .3); }
+
+/* ---------- Problema / lava ---------- */
+.problem__grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+.lava-art { width: 100%; height: auto; overflow: visible; }
+.lava-pulse { animation: lava 4.5s ease-in-out infinite; transform-origin: center; }
+@keyframes lava { 0%, 100% { opacity: .75; } 50% { opacity: 1; } }
+.question-card { padding: clamp(24px, 3vw, 36px); }
+.question-card h3 { font-size: clamp(1.4rem, 2.2vw, 1.7rem); font-weight: 700; margin-bottom: 8px; }
+.question-card > p { color: var(--text-soft); }
+.question-card ol { list-style: none; padding: 0; margin: 18px 0 24px; counter-reset: q; }
+.question-card li { counter-increment: q; display: grid; grid-template-columns: 36px 1fr; gap: 12px; padding: 13px 0; border-top: 1px solid var(--line); color: var(--text); }
+.question-card li::before { content: counter(q, decimal-leading-zero); font-family: var(--font-head); font-weight: 600; color: var(--teal); }
+.question-card__note { display: flex; gap: 10px; margin: 18px 0 0; font-size: .86rem; color: var(--text-mute); }
+.question-card__note .i { width: 18px; height: 18px; color: var(--orange-hi); margin-top: 2px; }
+@media (max-width: 920px) { .problem__grid { grid-template-columns: 1fr; } .lava-art { max-width: 520px; margin: 0 auto; } }
+
+/* ---------- Soluções ---------- */
+.cycle { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 26px 0 0; list-style: none; padding: 0; }
+.cycle li { display: inline-flex; align-items: center; gap: 8px; font: 500 .95rem var(--font-head); }
+.cycle li span { padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line-strong); background: rgba(255, 255, 255, .03); }
+.cycle li:not(:last-child)::after { content: "→"; color: var(--teal); }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.card { display: flex; flex-direction: column; gap: 14px; padding: 28px; position: relative; overflow: hidden; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+.card:hover { transform: translateY(-3px); border-color: rgba(36, 201, 189, .45); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .06), 0 0 0 1px rgba(36, 201, 189, .15), 0 28px 60px -28px rgba(36, 201, 189, .45); }
+.card__top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.card__icon { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: rgba(36, 201, 189, .12); color: var(--teal); box-shadow: inset 0 0 0 1px rgba(36, 201, 189, .25); }
+.pname { font-family: var(--font-head); font-size: 1.5rem; font-weight: 400; letter-spacing: -.02em; margin: 0; line-height: 1.1; }
+.pname b { font-weight: 700; }
+.card__text { color: var(--text-soft); margin: 0; flex: 1; }
+.card__link { display: inline-flex; align-items: center; gap: 6px; font: 600 .98rem var(--font-head); color: var(--teal); text-decoration: none; }
+.card__link .i { width: 18px; height: 18px; transition: transform .15s; }
+.card__link:hover .i { transform: translateX(3px); }
+.card--featured { grid-column: span 2; padding: 32px; border-color: rgba(243, 107, 56, .45); }
+.card--featured::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(460px 280px at 100% 0%, rgba(255, 122, 48, .26), transparent 65%), radial-gradient(380px 260px at 0% 100%, rgba(36, 201, 189, .12), transparent 60%); }
+.card--featured:hover { border-color: rgba(243, 107, 56, .7); box-shadow: 0 28px 60px -28px rgba(243, 107, 56, .5); }
+.card--featured > * { position: relative; }
+.card--featured .card__icon { background: rgba(243, 107, 56, .14); color: var(--orange-hi); box-shadow: inset 0 0 0 1px rgba(243, 107, 56, .35); }
+.card--featured .card__text { max-width: 580px; }
+.card__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+.roadmap { display: grid; grid-template-columns: auto 1fr 1fr; gap: 16px 32px; align-items: start; margin-top: 24px; padding: 22px 26px; border: 1.5px dashed var(--line-strong); border-radius: var(--radius-lg); }
+.roadmap__label { font: 600 .85rem var(--font-head); color: var(--text-mute); letter-spacing: .12em; text-transform: uppercase; padding-top: 2px; }
+.roadmap__item { display: flex; gap: 12px; align-items: flex-start; font-size: .95rem; color: var(--text-soft); }
+.roadmap__item .i { color: var(--teal); margin-top: 1px; }
+.roadmap__item strong { color: var(--text); }
+@media (max-width: 1000px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 680px) { .cards { grid-template-columns: 1fr; } .card--featured { grid-column: 1 / -1; } .roadmap { grid-template-columns: 1fr; } }
+
+/* ---------- Protect ---------- */
+.protect__grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 20px; align-items: stretch; }
+.panel { padding: clamp(24px, 3vw, 32px); }
+.panel h3 { margin-bottom: 20px; }
+.panel--dashed { background: transparent; border: 1.5px dashed var(--line-strong); box-shadow: none; }
+.check-list--2col { grid-template-columns: 1fr 1fr; gap: 14px 24px; }
+.report-card { padding: 24px; display: flex; flex-direction: column; }
+.report-card__head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.report-card__title { font: 600 1.1rem var(--font-head); }
+.report-card ul { list-style: none; margin: 0; padding: 0; }
+.report-card li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 11px 0; border-top: 1px solid var(--line); font-size: .92rem; color: var(--text-soft); }
+.report-card li:first-child { border-top: 0; }
+.report-card__foot { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--line); font-size: .82rem; color: var(--text-mute); }
+.pill { font: 600 .74rem var(--font-head); padding: 4px 10px; border-radius: 999px; background: rgba(243, 245, 244, .08); color: var(--text); white-space: nowrap; }
+.pill--ok { background: rgba(36, 201, 189, .15); color: var(--teal); }
+.pill--warn { background: rgba(243, 107, 56, .17); color: var(--orange-hi); }
+.protect__row { display: grid; grid-template-columns: .85fr 1.15fr; gap: 20px; margin-top: 20px; align-items: stretch; }
+.note { display: flex; gap: 14px; align-items: flex-start; padding: 24px 26px; border-radius: var(--radius-lg); border: 1px solid rgba(243, 107, 56, .35); background: linear-gradient(120deg, rgba(255, 122, 48, .12), rgba(255, 122, 48, .02) 70%); color: var(--text-soft); }
+.note .i { color: var(--orange-hi); margin-top: 2px; }
+.note p { margin: 0; }
+.note strong { color: var(--text); display: block; font: 600 1.1rem var(--font-head); margin-bottom: 4px; }
+.features4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: clamp(48px, 6vw, 72px); }
+.feature { padding: 26px 24px; border-radius: var(--radius); border: 1px solid var(--line); background: linear-gradient(180deg, rgba(36, 201, 189, .09), rgba(36, 201, 189, 0) 70%); }
+.feature__num { font: 600 .82rem var(--font-head); color: var(--teal); letter-spacing: .12em; }
+.feature h3 { margin: 10px 0 8px; }
+.feature p { margin: 0; color: var(--text-soft); font-size: .95rem; }
+@media (max-width: 1000px) { .protect__grid, .protect__row { grid-template-columns: 1fr; } .features4 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .check-list--2col, .features4 { grid-template-columns: 1fr; } }
+
+/* ---------- Como trabalhamos ---------- */
+.steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; list-style: none; padding: 0; margin: 0; counter-reset: s; }
+.step { counter-increment: s; padding: 24px 20px; }
+.step::before { content: counter(s, decimal-leading-zero); display: block; font: 700 1.8rem/1 var(--font-head); color: var(--teal); margin-bottom: 16px; text-shadow: 0 0 18px rgba(36, 201, 189, .45); }
+.step h3 { margin-bottom: 8px; }
+.step p { margin: 0; color: var(--text-soft); font-size: .93rem; }
+.timeline { margin-top: 40px; padding: clamp(24px, 3.5vw, 40px); }
+.timeline__head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; align-items: baseline; }
+.timeline__head h3 { margin: 0; font-size: 1.4rem; }
+.timeline__head p { margin: 0; color: var(--text-mute); font-size: .9rem; }
+.timeline__track { display: grid; grid-template-columns: repeat(6, 1fr); list-style: none; padding: 0; margin: 32px 0 0; }
+.timeline__item { position: relative; padding: 22px 16px 0 0; border-top: 2px solid rgba(36, 201, 189, .35); }
+.timeline__item::before { content: ""; position: absolute; top: -7px; left: 0; width: 12px; height: 12px; border-radius: 50%; background: var(--teal); box-shadow: 0 0 0 4px var(--surface), 0 0 14px var(--teal); }
+.timeline__item:last-child::before { background: var(--orange); box-shadow: 0 0 0 4px var(--surface), 0 0 14px var(--orange); }
+.timeline__day { display: block; font: 600 .95rem var(--font-head); color: var(--teal); margin-bottom: 4px; }
+.timeline__item:last-child .timeline__day { color: var(--orange-hi); }
+.timeline__item p { margin: 0; font-size: .9rem; color: var(--text-soft); }
+@media (max-width: 1100px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 860px) {
+  .timeline__track { grid-template-columns: 1fr; margin-left: 6px; }
+  .timeline__item { border-top: 0; border-left: 2px solid rgba(36, 201, 189, .35); padding: 0 0 20px 24px; }
+  .timeline__item:last-child { padding-bottom: 0; }
+  .timeline__item::before { top: 3px; left: -7px; }
+}
+@media (max-width: 640px) { .steps { grid-template-columns: 1fr; } }
+
+/* ---------- Lockups ---------- */
+.lockup { display: inline-flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+.lockup__mark { width: 64px; height: 64px; }
+.lockup__name { display: block; font: 400 clamp(1.8rem, 3vw, 2.3rem)/1 var(--font-head); letter-spacing: -.03em; }
+.lockup__name b { font-weight: 700; }
+.lockup__by { display: block; margin-top: 6px; font: 300 1rem var(--font-head); color: var(--text-soft); text-align: right; }
+.lockup__by b { font-weight: 600; color: var(--text); }
+
+/* ---------- Billing ---------- */
+.billing__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 72px); align-items: center; }
+.billing__copy .check-list { margin: 26px 0 32px; }
+.stage { position: relative; padding: 40px 18px 56px; }
+.stage__title { position: relative; z-index: 1; text-align: center; margin: 0 0 36px; font: 700 clamp(1.6rem, 2.8vw, 2.1rem)/1.15 var(--font-head); letter-spacing: -.02em; }
+.stage::after { content: ""; position: absolute; left: 4%; right: 4%; bottom: 14px; height: 70px; border-radius: 50%; background: radial-gradient(closest-side, rgba(36, 201, 189, .18), transparent); filter: blur(6px); }
+.status-cards { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; perspective: 900px; }
+.status {
+  --c: var(--teal); position: relative; padding: 24px 18px 22px; border-radius: 20px;
+  background: linear-gradient(160deg, #1D3049, #0E1A28 70%); border: 1px solid rgba(255, 255, 255, .08);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .07), 0 0 0 1px color-mix(in srgb, var(--c) 30%, transparent), 0 0 34px -10px var(--c), 0 30px 50px -24px rgba(0, 0, 0, .8);
+}
+.status:nth-child(1) { transform: rotateY(14deg) translateY(10px); }
+.status:nth-child(2) { --c: var(--blue); }
+.status:nth-child(3) { --c: var(--alert); transform: rotateY(-14deg) translateY(10px); }
+.status__icon { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; margin-bottom: 18px; color: var(--c); border: 2.5px solid var(--c); box-shadow: 0 0 18px -4px var(--c); }
+.status__icon .i { width: 28px; height: 28px; stroke-width: 2.2; }
+.status__label { display: block; font: 600 1.12rem var(--font-head); margin-bottom: 16px; }
+.status__bar { height: 9px; border-radius: 99px; background: rgba(255, 255, 255, .09); overflow: hidden; margin-bottom: 12px; }
+.status__bar i { display: block; height: 100%; width: var(--w, 50%); border-radius: inherit; background: linear-gradient(90deg, color-mix(in srgb, var(--c) 70%, #fff 0%), var(--c)); box-shadow: 0 0 12px var(--c); }
+.status__bar--muted { width: 62%; height: 9px; border-radius: 99px; background: rgba(255, 255, 255, .07); }
+.stage .tag-illus { position: absolute; right: 18px; bottom: 6px; }
+@media (max-width: 980px) { .billing__grid { grid-template-columns: 1fr; } }
+@media (max-width: 560px) {
+  .status-cards { grid-template-columns: 1fr; }
+  .status:nth-child(1), .status:nth-child(3) { transform: none; }
+  .status { display: grid; grid-template-columns: 58px 1fr; column-gap: 16px; align-items: center; }
+  .status__icon { margin: 0; grid-row: span 3; }
+  .status__label { margin-bottom: 8px; }
+}
+
+/* ---------- Gateway ---------- */
+.gw::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(720px 460px at 8% 0%, rgba(255, 122, 48, .14), transparent 60%), radial-gradient(600px 420px at 95% 30%, rgba(36, 201, 189, .10), transparent 60%); }
+.gw > .container { z-index: 1; }
+.gw__hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(32px, 6vw, 72px); align-items: center; }
+.gw__status { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 18px; }
+.gw__hero h2 { font-size: clamp(2.2rem, 4.6vw, 3.4rem); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 26px 0 32px; }
+.chips li { display: inline-flex; align-items: center; gap: 8px; padding: 8px 15px; border-radius: 999px; border: 1px solid var(--line-strong); font: 500 .94rem var(--font-head); background: rgba(243, 245, 244, .03); }
+.chips .i { width: 18px; height: 18px; color: var(--teal); }
+.gw__actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.pay-card { position: relative; z-index: 1; max-width: 400px; margin-left: auto; padding: 24px; background: #FFFFFF; color: #0F1C2C; border-radius: var(--radius-lg); box-shadow: 0 0 0 1px rgba(36, 201, 189, .4), 0 0 60px -12px rgba(36, 201, 189, .45), 0 40px 80px -30px rgba(0, 0, 0, .8); }
+.pay-card__head { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: .85rem; color: #45566A; }
+.pay-card__tag { font-size: .66rem; text-transform: uppercase; letter-spacing: .1em; }
+.pay-card__amount { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 14px 0 18px; padding-bottom: 18px; border-bottom: 1px solid #DCE3E2; }
+.pay-card__amount strong { font: 700 2.1rem var(--font-head); letter-spacing: -.02em; }
+.pay-card .badge { background: rgba(0, 127, 130, .1); color: var(--teal-deep); border-color: rgba(0, 127, 130, .25); }
+.pay-steps { list-style: none; padding: 0; margin: 0; }
+.pay-steps li { position: relative; display: grid; grid-template-columns: 26px 1fr; gap: 12px; padding-bottom: 16px; }
+.pay-steps li:last-child { padding-bottom: 0; }
+.pay-steps li:not(:last-child)::after { content: ""; position: absolute; left: 12px; top: 26px; bottom: 2px; width: 2px; background: rgba(0, 127, 130, .25); }
+.pay-steps__dot { width: 26px; height: 26px; border-radius: 50%; background: rgba(0, 127, 130, .12) var(--check-petrol) center / 13px no-repeat; }
+.pay-steps li:last-child .pay-steps__dot { background: var(--orange) var(--check-navy) center / 13px no-repeat; }
+.pay-steps strong { display: block; font: 600 1rem var(--font-head); }
+.pay-steps span { font-size: .82rem; color: #45566A; }
+.pay-card__foot { display: flex; align-items: center; gap: 10px; margin-top: 18px; padding: 12px 14px; border-radius: 12px; background: #F3F5F4; font-size: .85rem; }
+.pay-card__foot .i { width: 20px; height: 20px; color: var(--teal-deep); }
+.gw-block { margin-top: clamp(72px, 9vw, 112px); }
+.gw-block > h3 { font-size: clamp(1.6rem, 2.8vw, 2.1rem); font-weight: 700; margin-bottom: 10px; }
+.gw-block > p.muted { max-width: 680px; margin-bottom: 32px; }
+.problems { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.problem { padding: 22px; }
+.problem .i { color: var(--orange-hi); margin-bottom: 14px; }
+.problem p { margin: 0; color: var(--text-soft); font-size: .95rem; }
+.problem strong { display: block; font: 600 1.08rem var(--font-head); margin-bottom: 6px; }
+.gw-features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.gw-feature { display: flex; gap: 16px; align-items: flex-start; padding: 22px; }
+.gw-feature__icon { width: 46px; height: 46px; border-radius: 13px; display: grid; place-items: center; flex: none; background: rgba(36, 201, 189, .12); color: var(--teal); box-shadow: inset 0 0 0 1px rgba(36, 201, 189, .25); }
+.gw-feature h4 { margin: 2px 0 4px; font-size: 1.08rem; font-weight: 600; letter-spacing: -.01em; }
+.gw-feature p { margin: 0; font-size: .92rem; color: var(--text-soft); }
+.flow-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; list-style: none; padding: 0; margin: 0; }
+.flow-steps li { position: relative; padding: 24px 22px; }
+.flow-steps li:not(:last-child)::after { content: ""; position: absolute; right: -18px; top: 50%; width: 10px; height: 10px; border-top: 2px solid var(--teal); border-right: 2px solid var(--teal); transform: translateY(-50%) rotate(45deg); filter: drop-shadow(0 0 4px var(--teal)); }
+.flow-steps .is-core { border-color: rgba(36, 201, 189, .6); box-shadow: 0 0 40px -14px rgba(36, 201, 189, .6); }
+.flow-steps .is-end { border-color: rgba(243, 107, 56, .55); box-shadow: 0 0 40px -14px rgba(243, 107, 56, .5); }
+.flow-steps__icon { width: 46px; height: 46px; border-radius: 13px; display: grid; place-items: center; margin-bottom: 14px; background: rgba(243, 245, 244, .06); color: var(--text); }
+.flow-steps .is-core .flow-steps__icon { background: var(--bg); box-shadow: inset 0 0 0 1px rgba(36, 201, 189, .5); }
+.flow-steps .is-core .flow-steps__icon .i { width: 32px; height: 32px; }
+.flow-steps .is-end .flow-steps__icon { background: rgba(243, 107, 56, .16); color: var(--orange-hi); }
+.flow-steps h4 { margin: 0 0 6px; font-size: 1.08rem; font-weight: 600; letter-spacing: -.01em; }
+.flow-steps p { margin: 0; font-size: .92rem; color: var(--text-soft); }
+.flow-return { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-top: 20px; padding: 16px 20px; border: 1.5px dashed rgba(36, 201, 189, .4); border-radius: var(--radius); font-size: .94rem; color: var(--text-soft); }
+.flow-return strong { color: var(--teal); font: 600 1rem var(--font-head); }
+.flow-return span { display: inline-flex; align-items: center; gap: 8px; }
+.flow-return span + span::before { content: "→"; color: var(--teal); }
+.dev { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(28px, 4vw, 48px); align-items: start; }
+.dev h3 { font-size: clamp(1.6rem, 2.8vw, 2.1rem); font-weight: 700; }
+.code { background: #07101A; border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; min-width: 0; box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .8); }
+.code__bar { display: flex; align-items: center; gap: 8px; padding: 12px 16px; border-bottom: 1px solid var(--line); font-size: .78rem; color: var(--text-mute); }
+.code__bar i { width: 10px; height: 10px; border-radius: 50%; background: rgba(243, 245, 244, .18); }
+.code__bar i:first-child { background: var(--orange); }
+.code__bar span { margin-left: auto; text-transform: uppercase; letter-spacing: .1em; font-size: .66rem; }
+.code pre { margin: 0; padding: 20px 22px; overflow-x: auto; font: .85rem/1.7 var(--font-mono); color: #CFE2E0; tab-size: 2; }
+.t-m { color: var(--orange-hi); font-weight: 600; }
+.t-k { color: var(--teal); }
+.t-s { color: #F6B08F; }
+.t-n { color: #A9D6FF; }
+.t-c { color: #6E8399; font-style: italic; }
+.principles { list-style: none; padding: 0; margin: 0; }
+.principles li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 16px 0; border-top: 1px solid var(--line); }
+.principles li:first-child { border-top: 0; padding-top: 0; }
+.principles__icon { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: rgba(36, 201, 189, .12); color: var(--teal); box-shadow: inset 0 0 0 1px rgba(36, 201, 189, .25); }
+.principles strong { display: block; font: 600 1.05rem var(--font-head); margin-bottom: 2px; }
+.principles p { margin: 0; color: var(--text-soft); font-size: .93rem; }
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.compare__col { padding: clamp(24px, 3vw, 32px); }
+.compare__col--gw { border-color: rgba(243, 107, 56, .5); background: linear-gradient(180deg, rgba(255, 122, 48, .10), rgba(255, 122, 48, 0) 60%), var(--surface); }
+.compare__col header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.compare__col > p { color: var(--text-soft); }
+.interest { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(28px, 5vw, 56px); align-items: start; margin-top: clamp(72px, 9vw, 112px); padding: clamp(24px, 4.5vw, 52px); border-color: rgba(243, 107, 56, .45); box-shadow: 0 0 80px -30px rgba(243, 107, 56, .5), inset 0 1px 0 rgba(255, 255, 255, .06); }
+.interest h3 { font-size: clamp(1.7rem, 2.8vw, 2.2rem); font-weight: 700; margin-top: 16px; }
+.interest .check-list { margin-top: 24px; font-size: .96rem; }
+@media (max-width: 1000px) {
+  .gw__hero, .dev, .interest { grid-template-columns: 1fr; }
+  .pay-card { margin: 0 auto; }
+  .problems, .gw-features { grid-template-columns: repeat(2, 1fr); }
+  .flow-steps { grid-template-columns: 1fr 1fr; }
+  .flow-steps li:nth-child(2)::after { display: none; }
+}
+@media (max-width: 640px) {
+  .problems, .gw-features, .compare { grid-template-columns: 1fr; }
+  .flow-steps { grid-template-columns: 1fr; gap: 28px; }
+  .flow-steps li:not(:last-child)::after, .flow-steps li:nth-child(2)::after { display: block; right: auto; left: 50%; top: auto; bottom: -20px; transform: translateX(-50%) rotate(135deg); }
+}
+
+/* ---------- Forms ---------- */
+.form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.field--full { grid-column: 1 / -1; }
+.field label, .field legend { font: 500 .92rem var(--font-head); color: var(--text); }
+.field .opt { font-weight: 300; color: var(--text-mute); }
+.form input:not([type="checkbox"]), .form select, .form textarea {
+  width: 100%; font: inherit; font-size: 1rem; color: var(--text); background-color: rgba(243, 245, 244, .05);
+  padding: 13px 14px; border: 1.5px solid var(--line-strong); border-radius: 12px; transition: border-color .15s, box-shadow .15s;
+}
+.form select { appearance: none; -webkit-appearance: none; padding-right: 40px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='m3 4.5 3 3 3-3' fill='none' stroke='%2324C9BD' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; background-size: 14px; }
+.form option { color: #0F1C2C; background: #fff; }
+.form textarea { min-height: 112px; resize: vertical; }
+.form input::placeholder, .form textarea::placeholder { color: rgba(243, 245, 244, .4); }
+.form input:focus, .form select:focus, .form textarea:focus { outline: none; border-color: var(--teal); box-shadow: 0 0 0 3px rgba(36, 201, 189, .2); }
+.form fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.form legend { padding: 0; margin-bottom: 8px; }
+.options { display: flex; flex-wrap: wrap; gap: 8px; }
+.option { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1.5px solid var(--line-strong); border-radius: 999px; font: 400 .93rem var(--font-head); cursor: pointer; transition: border-color .15s, background-color .15s; }
+.option input { accent-color: var(--teal); margin: 0; }
+.option:has(input:checked) { border-color: var(--teal); background: rgba(36, 201, 189, .1); }
+.field .consent { display: flex; gap: 10px; align-items: flex-start; font: 400 .88rem var(--font-body); color: var(--text-soft); cursor: pointer; }
+.consent input { margin-top: 4px; accent-color: var(--teal); flex: none; }
+.form__foot { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+.form-status { margin: 0; font-size: .92rem; }
+.form-status[data-state="ok"] { color: var(--teal); font-weight: 500; }
+.form-status[data-state="error"] { color: var(--orange-hi); font-weight: 500; }
+@media (max-width: 600px) { .form { grid-template-columns: 1fr; } }
+
+/* ---------- Para quem ---------- */
+.banner { display: grid; grid-template-columns: 1.15fr .85fr; gap: 32px; align-items: center; padding: clamp(28px, 5vw, 56px); margin-bottom: clamp(40px, 5vw, 56px); overflow: hidden; position: relative; }
+.banner::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(480px 300px at 90% 50%, rgba(36, 201, 189, .16), transparent 65%); }
+.banner > * { position: relative; }
+.banner h2 { font-size: clamp(1.9rem, 3.6vw, 2.8rem); }
+.banner .lead { margin-bottom: 28px; }
+.banner__art { width: 100%; max-width: 360px; justify-self: center; overflow: visible; }
+.segments { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.segment { display: flex; flex-direction: column; gap: 10px; padding: 26px; }
+.segment h3 { margin: 0; font-size: 1.3rem; }
+.segment p { margin: 0; color: var(--text-soft); font-size: .96rem; }
+.segment__meta { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line); font: 500 .88rem var(--font-head); color: var(--teal); }
+.segment--featured { grid-row: span 2; padding: 32px; border-color: rgba(36, 201, 189, .4); background: linear-gradient(165deg, rgba(0, 127, 130, .55), rgba(0, 127, 130, .12) 60%), var(--surface); }
+.segment--featured h3 { font-size: 1.8rem; }
+.segment--featured p { color: var(--text); font-size: 1.02rem; }
+.segment--featured .badge { align-self: flex-start; }
+.segment--featured .check-list { margin: 10px 0 4px; font-size: .96rem; }
+.segment--featured .segment__meta { color: var(--text); border-color: rgba(243, 245, 244, .2); }
+@media (max-width: 1000px) { .segments { grid-template-columns: repeat(2, 1fr); } .segment--featured { grid-row: auto; grid-column: 1 / -1; } }
+@media (max-width: 760px) { .banner { grid-template-columns: 1fr; } .banner__art { max-width: 300px; } }
+@media (max-width: 600px) { .segments { grid-template-columns: 1fr; } }
+
+/* ---------- Marca ---------- */
+.brand { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(32px, 6vw, 72px); align-items: center; }
+.brand__mark { position: relative; aspect-ratio: 1; border-radius: 36px; display: grid; place-items: center; overflow: hidden; border: 1px solid var(--line); background: radial-gradient(circle at 70% 25%, rgba(255, 122, 48, .18), transparent 50%), radial-gradient(circle at 25% 85%, rgba(36, 201, 189, .2), transparent 55%), var(--surface); }
+.brand__mark svg { width: 64%; height: auto; filter: drop-shadow(0 0 28px rgba(36, 201, 189, .35)); }
+.palette { display: grid; grid-template-columns: repeat(auto-fit, minmax(104px, 1fr)); gap: 10px; margin-top: 28px; list-style: none; padding: 0; }
+.swatch { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); font-size: .78rem; }
+.swatch__color { height: 58px; }
+.swatch__label { padding: 8px 10px; background: var(--surface); line-height: 1.35; }
+.swatch__label b { display: block; font: 600 .84rem var(--font-head); color: var(--text); }
+.swatch__label code { font-family: var(--font-mono); color: var(--text-mute); font-size: .74rem; }
+@media (max-width: 860px) { .brand { grid-template-columns: 1fr; } .brand__mark { max-width: 340px; width: 100%; } }
+
+/* ---------- FAQ ---------- */
+.faq { max-width: 880px; margin: 0 auto; }
+.faq__group + .faq__group { margin-top: 52px; }
+.faq__group > h3 { display: flex; align-items: center; gap: 10px; font-size: .82rem; letter-spacing: .16em; text-transform: uppercase; color: var(--teal); margin-bottom: 8px; }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary { list-style: none; cursor: pointer; position: relative; padding: 22px 44px 22px 0; font: 500 1.15rem var(--font-head); letter-spacing: -.01em; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: ""; position: absolute; right: 8px; top: 50%; width: 10px; height: 10px; border-right: 2px solid var(--teal); border-bottom: 2px solid var(--teal); transform: translateY(-70%) rotate(45deg); transition: transform .2s ease; }
+.faq details[open] summary::after { transform: translateY(-25%) rotate(-135deg); }
+.faq summary:hover { color: var(--teal-hi); }
+.faq details p { margin: 0; padding: 0 44px 22px 0; color: var(--text-soft); }
+
+/* ---------- Contato ---------- */
+.contact { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(32px, 6vw, 72px); align-items: start; }
+.channels { list-style: none; padding: 0; margin: 28px 0; display: grid; gap: 12px; }
+.channels li[hidden], .channels[hidden] { display: none; }
+.channels[hidden] + .safety { margin-top: 28px; }
+.channels a { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font: 500 1.05rem var(--font-head); }
+.channels a:hover { color: var(--teal); }
+.channels .i { width: 42px; height: 42px; padding: 10px; border-radius: 12px; background: rgba(36, 201, 189, .12); color: var(--teal); }
+.safety { display: flex; gap: 14px; padding: 18px 20px; border-radius: var(--radius); border: 1px solid var(--line); background: rgba(243, 245, 244, .03); font-size: .94rem; color: var(--text-soft); }
+.safety .i { color: var(--teal); }
+.safety p { margin: 0; }
+.safety strong { color: var(--text); }
+.form-card { padding: clamp(22px, 3.5vw, 36px); }
+@media (max-width: 900px) { .contact { grid-template-columns: 1fr; } }
+
+/* ---------- Footer ---------- */
+.site-footer { background: var(--bg-footer); color: var(--text-soft); padding: 64px 0 32px; font-size: .92rem; border-top: 1px solid var(--line); }
+.footer__grid { display: grid; grid-template-columns: 1.5fr repeat(3, 1fr); gap: 32px; }
+.footer__brand p { margin: 16px 0 0; max-width: 320px; }
+.site-footer h4 { color: var(--text); font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 16px; }
+.site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.site-footer li[hidden] { display: none; }
+.site-footer a { text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+.site-footer a:hover { color: var(--teal); }
+.footer__bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: .82rem; color: var(--text-mute); }
+@media (max-width: 860px) { .footer__grid { grid-template-columns: 1fr 1fr; } .footer__brand { grid-column: 1 / -1; } }
+@media (max-width: 480px) { .footer__grid { grid-template-columns: 1fr; } }
+
+/* ---------- Reveal ---------- */
+.js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+.js .reveal.is-visible { opacity: 1; transform: none; }
+.js .status.reveal.is-visible:nth-child(1) { transform: rotateY(14deg) translateY(10px); }
+.js .status.reveal.is-visible:nth-child(3) { transform: rotateY(-14deg) translateY(10px); }
+@media (max-width: 560px) { .js .status.reveal.is-visible:nth-child(1), .js .status.reveal.is-visible:nth-child(3) { transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  .flow-dash, .badge--live::before, .lava-pulse { animation: none; }
+  .btn:hover, .card:hover { transform: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- Logo, ícones e filtros compartilhados -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-logo" viewBox="246 246 772 772"><g stroke-width="1" stroke-linejoin="round"><path fill="#FEFEFE" stroke="#FEFEFE" d="M441.2 339.0 443.0 338.3 445.0 339.3 445.7 345.0 445.3 578.0 444.0 579.0 260.4 471.0 255.0 466.5 253.2 462.0 253.9 459.0 257.0 455.7Z M583.4 411.0 592.0 410.4 602.0 411.5 616.0 416.6 673.0 449.8 703.4 469.0 704.5 494.0 705.1 688.0 705.1 731.0 704.0 732.3 547.9 638.0 549.3 448.0 550.1 440.0 553.6 429.0 560.0 421.4 572.0 413.7Z M250.2 649.0 251.0 648.1 255.7 657.0 260.9 663.0 276.0 674.4 437.9 770.0 438.1 936.0 437.0 950.3 435.0 950.9 430.0 948.2 251.7 839.0 249.9 834.0Z M918.9 709.0 922.0 708.9 929.0 711.0 1003.0 755.7 1006.3 759.0 1009.3 767.0 1009.2 796.0 1007.3 803.0 1003.0 809.7 999.0 813.4 945.0 846.2 935.0 850.8 927.0 852.5 916.0 852.4 903.0 849.2 888.0 842.3 790.6 784.0 904.0 715.7 912.0 711.1Z"/><path fill="#02B2BF" stroke="#02B2BF" d="M741.0 314.0 753.0 313.2 768.7 314.0 785.0 317.7 798.4 324.0 999.0 452.0 1011.0 460.5 1012.1 463.0 1011.6 465.0 936.9 511.0 910.0 525.7 865.0 553.1 858.0 556.0 851.0 556.5 844.0 555.0 840.3 553.0 711.0 472.0 624.0 420.0 610.0 413.6 597.0 410.7 588.0 410.3 574.0 412.9 573.6 412.0 575.9 410.0 602.4 392.0 703.0 327.9 719.0 319.7Z M251.9 463.0 253.0 462.7 254.0 465.4 258.0 469.5 274.0 479.3 494.0 608.5 547.0 638.0 889.2 843.0 910.0 851.5 921.0 853.0 934.0 851.5 934.8 852.0 934.2 853.0 799.0 935.0 785.0 943.0 775.0 947.2 759.0 950.4 743.0 949.2 725.0 943.1 710.0 935.2 606.7 873.0 447.0 774.2 277.0 675.0 261.1 663.0 256.0 657.5 252.0 651.0 249.8 643.0 249.7 473.0Z"/><path fill="#FE792A" stroke="#FE792A" d="M1009.3 466.0 1011.0 465.7 1012.0 467.0 1012.9 473.0 1012.5 563.0 1011.0 569.9 1006.0 576.8 993.0 585.3 990.0 586.3 934.0 621.2 928.0 621.8 926.0 618.9 925.5 616.0 926.1 517.0Z"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7" ry="2.5"/><path d="M5 5.5v6c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-6"/><path d="M5 11.5v6c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-6"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></symbol>
+  <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 2.5h12v19l-3-2-3 2-3-2-3 2v-19Z"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19M6.5 15h4"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3c.6 4.4 2.6 6.4 7 7-4.4.6-6.4 2.6-7 7-.6-4.4-2.6-6.4-7-7 4.4-.6 6.4-2.6 7-7Z"/><path d="M19 16.5c.2 1.5.9 2.2 2.5 2.5-1.6.3-2.3 1-2.5 2.5-.2-1.5-.9-2.2-2.5-2.5 1.6-.3 2.3-1 2.5-2.5Z"/></symbol>
+  <symbol id="i-pix" viewBox="0 0 24 24"><path d="m12 2.5 9.5 9.5-9.5 9.5L2.5 12 12 2.5Z"/><path d="m8.5 12 3.5-3.5 3.5 3.5-3.5 3.5L8.5 12Z"/></symbol>
+  <symbol id="i-barcode" viewBox="0 0 24 24"><path d="M3.5 5v14M6.5 5v14M10 5v14M13 5v14M17 5v14M20.5 5v14"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+  <symbol id="i-sync" viewBox="0 0 24 24"><path d="M20 8A8.5 8.5 0 0 0 5 6.5M4 3.5v4h4"/><path d="M4 16a8.5 8.5 0 0 0 15 1.5M20 20.5v-4h-4"/></symbol>
+  <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M3 9h18M9 21V9"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5.6 9.6A2 2 0 0 0 6.1 21.5h11.8a2 2 0 0 0 1.7-2.9L14 9V3"/><path d="M7 15h10"/></symbol>
+  <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4 2v-8L3 5Z"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M17 6l3 3M14 9l2 2"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></symbol>
+  <symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 10 12 4l9 6"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20.5h18"/></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M21.5 2.5 10.5 13.5"/><path d="M21.5 2.5 14.5 21.5l-4-8-8-4 19-7Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-4.9A8.5 8.5 0 1 1 20.5 12Z"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5M12 16.5h.01"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m6.5 12.5 3.5 3.5 7.5-8"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 6.5V12h4.5"/></symbol>
+  <symbol id="i-bang" viewBox="0 0 24 24"><path d="M12 6v7.5M12 17.5h.01"/></symbol>
+  <defs>
+    <filter id="f-rock" x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016 0.03" numOctaves="6" seed="4" result="n"/>
+      <feDiffuseLighting in="n" surfaceScale="9" diffuseConstant="1.05" lighting-color="#3A4553" result="l"><feDistantLight azimuth="235" elevation="36"/></feDiffuseLighting>
+      <feComposite in="l" in2="SourceAlpha" operator="in"/>
+    </filter>
+    <filter id="lc-rock" x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="5" seed="9" result="n"/>
+      <feDiffuseLighting in="n" surfaceScale="5" diffuseConstant="1.05" lighting-color="#3C4755" result="l"><feDistantLight azimuth="235" elevation="45"/></feDiffuseLighting>
+      <feComposite in="l" in2="SourceAlpha" operator="in"/>
+    </filter>
+    <filter id="f-glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="lc-glow" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="lc-blur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="lc-bigblur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="f-mark-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceAlpha" stdDeviation="14" result="b"/><feFlood flood-color="#24C9BD" flood-opacity=".45"/><feComposite in2="b" operator="in" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="g-ribbon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#24C9BD" stop-opacity="0"/><stop offset=".2" stop-color="#3FE0D4"/><stop offset=".72" stop-color="#24C9BD"/><stop offset="1" stop-color="#0FA3A8"/></linearGradient>
+    <linearGradient id="g-ribbon-under" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0B7F86" stop-opacity="0"/><stop offset=".25" stop-color="#0B7F86"/></linearGradient>
+    <linearGradient id="g-rock-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0F1C2C"/><stop offset=".3" stop-color="#0F1C2C" stop-opacity=".1"/><stop offset=".75" stop-color="#0F1C2C" stop-opacity=".35"/><stop offset="1" stop-color="#0A1520" stop-opacity=".95"/></linearGradient>
+    <linearGradient id="lc-side" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF7A30" stop-opacity=".22"/><stop offset=".5" stop-color="#0A121B" stop-opacity="0"/></linearGradient>
+    <radialGradient id="lc-core" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#FFC08A"/><stop offset=".45" stop-color="#FF8A3D"/><stop offset="1" stop-color="#C2410C"/></radialGradient>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<div class="announce" data-announce>
+  <div class="container announce__inner">
+    <span class="badge badge--orange badge--live">Em breve</span>
+    <p>Herta Gateway: nosso gateway de pagamento está a caminho. <a href="#gateway">Conheça e entre na lista de interesse</a></p>
+    <button class="announce__close" type="button" aria-label="Fechar aviso" data-announce-close>&times;</button>
+  </div>
+</div>
+
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <a class="logo" href="#topo" aria-label="HertaCloud, voltar ao início">
+      <svg class="logo__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+      <span class="logo__word">Herta<span>Cloud</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+      <span class="sr-only">Abrir menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Principal" data-nav>
+      <ul>
+        <li><a href="#solucoes">Soluções</a></li>
+        <li><a href="#protect">Protect</a></li>
+        <li><a href="#billing">Billing</a></li>
+        <li><a href="#gateway">Gateway <span class="badge badge--orange badge--xs">Em breve</span></a></li>
+        <li><a href="#para-quem">Para quem</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+      </ul>
+      <a class="btn btn--primary btn--sm" href="#contato">Fale conosco</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero" id="topo">
+    <svg class="hero__rocks" viewBox="0 0 1440 330" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <path d="M0 120C90 96 150 128 240 104S390 70 470 96 610 140 700 112 860 60 960 88 1120 150 1220 118 1380 80 1440 96V330H0Z" fill="#fff" filter="url(#f-rock)"/>
+      <path d="M0 120C90 96 150 128 240 104S390 70 470 96 610 140 700 112 860 60 960 88 1120 150 1220 118 1380 80 1440 96V330H0Z" fill="url(#g-rock-fade)"/>
+      <g fill="none" stroke="#24C9BD" stroke-linecap="round" filter="url(#f-glow)">
+        <path d="M-10 210C160 170 300 230 460 196S760 130 920 170 1240 230 1450 180" stroke-width="1.3" opacity=".55"/>
+        <path d="M-10 240C180 200 320 262 480 226S780 160 940 200 1260 262 1450 210" stroke-width="1" opacity=".35"/>
+        <path class="flow-dash" d="M-10 272C200 230 340 292 500 256S800 190 960 230 1280 292 1450 240" stroke-width="1.2" stroke-dasharray="3 9" opacity=".5"/>
+      </g>
+    </svg>
+
+    <div class="container hero__grid">
+      <div class="hero__copy reveal">
+        <p class="eyebrow">Proteção de dados e inteligência de negócios</p>
+        <h1>Proteção na base.<br><span class="hl">Inteligência para crescer.</span></h1>
+        <ul class="hero__lines">
+          <li>Dados protegidos.</li>
+          <li>Informação organizada.</li>
+          <li>Decisões com mais clareza.</li>
+        </ul>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#solucoes">Conheça a HertaCloud <svg class="i"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--outline" href="#contato" data-interest="checklist"><svg class="i"><use href="#i-send"/></svg> Peça o checklist</a>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <svg class="hero__art" viewBox="0 0 640 560">
+          <g fill="none" stroke="#24C9BD" stroke-linecap="round" filter="url(#f-glow)">
+            <path d="M-20 470C120 430 220 470 330 440S520 380 660 400" stroke-width="1.2" opacity=".6"/>
+            <path d="M-20 500C140 455 240 505 350 470S540 410 660 430" stroke-width="1" opacity=".45"/>
+            <path d="M-20 530C160 480 260 540 370 500S560 440 660 460" stroke-width="1" opacity=".32"/>
+            <path d="M-20 440C100 410 200 440 310 415S500 355 660 372" stroke-width="1" opacity=".4"/>
+            <path class="flow-dash" d="M-20 412C110 385 210 410 300 392S490 330 660 345" stroke-width="1.2" stroke-dasharray="2 8" opacity=".55"/>
+          </g>
+          <g fill="#24C9BD"><circle cx="288" cy="409" r="2" opacity="0.54"/>
+<circle cx="561" cy="395" r="1.1" opacity="0.37"/>
+<circle cx="328" cy="432" r="0.8" opacity="0.54"/>
+<circle cx="76" cy="422" r="0.8" opacity="0.64"/>
+<circle cx="249" cy="427" r="1.1" opacity="0.66"/>
+<circle cx="546" cy="439" r="0.8" opacity="0.29"/>
+<circle cx="109" cy="466" r="2" opacity="0.46"/>
+<circle cx="382" cy="468" r="1.1" opacity="0.59"/>
+<circle cx="415" cy="410" r="2" opacity="0.68"/>
+<circle cx="257" cy="474" r="0.8" opacity="0.71"/>
+<circle cx="194" cy="476" r="0.8" opacity="0.62"/>
+<circle cx="53" cy="481" r="0.8" opacity="0.80"/>
+<circle cx="243" cy="530" r="0.8" opacity="0.39"/>
+<circle cx="610" cy="393" r="0.8" opacity="0.56"/>
+<circle cx="647" cy="390" r="1.1" opacity="0.76"/>
+<circle cx="163" cy="478" r="0.8" opacity="0.45"/>
+<circle cx="-10" cy="386" r="1.1" opacity="0.41"/>
+<circle cx="49" cy="492" r="0.8" opacity="0.55"/>
+<circle cx="311" cy="462" r="1.1" opacity="0.89"/>
+<circle cx="503" cy="417" r="2" opacity="0.67"/>
+<circle cx="59" cy="439" r="1.5" opacity="0.81"/>
+<circle cx="643" cy="410" r="1.5" opacity="0.90"/>
+<circle cx="-7" cy="482" r="0.8" opacity="0.28"/>
+<circle cx="80" cy="553" r="2" opacity="0.42"/>
+<circle cx="505" cy="422" r="0.8" opacity="0.30"/>
+<circle cx="122" cy="489" r="1.1" opacity="0.26"/>
+<circle cx="231" cy="463" r="2" opacity="0.79"/>
+<circle cx="72" cy="449" r="2" opacity="0.37"/>
+<circle cx="85" cy="509" r="1.1" opacity="0.72"/>
+<circle cx="88" cy="432" r="1.1" opacity="0.70"/>
+<circle cx="244" cy="462" r="0.8" opacity="0.32"/>
+<circle cx="6" cy="448" r="1.5" opacity="0.40"/>
+<circle cx="459" cy="443" r="2" opacity="0.44"/>
+<circle cx="99" cy="520" r="0.8" opacity="0.33"/>
+<circle cx="306" cy="447" r="0.8" opacity="0.43"/>
+<circle cx="604" cy="375" r="1.1" opacity="0.74"/>
+<circle cx="27" cy="432" r="0.8" opacity="0.36"/>
+<circle cx="231" cy="486" r="1.1" opacity="0.31"/>
+<circle cx="74" cy="435" r="1.1" opacity="0.63"/>
+<circle cx="608" cy="417" r="2" opacity="0.84"/>
+<circle cx="457" cy="452" r="0.8" opacity="0.56"/>
+<circle cx="477" cy="440" r="1.5" opacity="0.34"/>
+<circle cx="29" cy="424" r="0.8" opacity="0.84"/>
+<circle cx="481" cy="449" r="1.1" opacity="0.77"/>
+<circle cx="602" cy="383" r="0.8" opacity="0.82"/>
+<circle cx="264" cy="510" r="0.8" opacity="0.81"/>
+<circle cx="370" cy="442" r="0.8" opacity="0.65"/>
+<circle cx="35" cy="432" r="0.8" opacity="0.90"/>
+<circle cx="578" cy="412" r="2" opacity="0.54"/>
+<circle cx="550" cy="394" r="0.8" opacity="0.59"/>
+<circle cx="330" cy="463" r="0.8" opacity="0.40"/>
+<circle cx="455" cy="458" r="2" opacity="0.76"/>
+<circle cx="429" cy="388" r="1.5" opacity="0.45"/>
+<circle cx="441" cy="455" r="1.1" opacity="0.59"/>
+<circle cx="493" cy="399" r="2" opacity="0.83"/>
+<circle cx="202" cy="531" r="1.5" opacity="0.38"/>
+<circle cx="273" cy="496" r="1.1" opacity="0.50"/>
+<circle cx="377" cy="399" r="1.5" opacity="0.39"/>
+<circle cx="71" cy="422" r="0.8" opacity="0.71"/>
+<circle cx="626" cy="456" r="1.5" opacity="0.78"/>
+<circle cx="57" cy="390" r="2" opacity="0.50"/>
+<circle cx="334" cy="480" r="1.5" opacity="0.72"/>
+<circle cx="552" cy="404" r="0.8" opacity="0.43"/>
+<circle cx="393" cy="440" r="1.5" opacity="0.62"/>
+<circle cx="190" cy="475" r="1.1" opacity="0.51"/>
+<circle cx="109" cy="460" r="1.5" opacity="0.40"/>
+<circle cx="76" cy="501" r="2" opacity="0.32"/>
+<circle cx="344" cy="479" r="1.5" opacity="0.87"/>
+<circle cx="445" cy="459" r="1.1" opacity="0.71"/>
+<circle cx="493" cy="470" r="0.8" opacity="0.37"/></g>
+          <path d="M-30 520C60 500 140 470 250 470S470 470 520 420 480 330 420 300" fill="none" stroke="url(#g-ribbon-under)" stroke-width="54" opacity=".9" filter="url(#f-glow)"/>
+          <path d="M-30 512C60 492 140 462 250 462S470 462 520 412 480 322 420 292" fill="none" stroke="url(#g-ribbon)" stroke-width="42"/>
+          <path d="M-30 492C60 472 140 442 250 442S450 442 500 400" fill="none" stroke="#B8FFF8" stroke-width="2" opacity=".5"/>
+          <svg x="290" y="56" width="310" height="310" filter="url(#f-mark-glow)"><use href="#i-logo"/></svg>
+          <circle r="4" fill="#FF7A30" filter="url(#f-glow)">
+            <animateMotion dur="9s" repeatCount="indefinite" path="M-20 470C120 430 220 470 330 440S520 380 660 400"/>
+          </circle>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="section section--deep" id="problema">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow">Antes de tudo, uma pergunta</p>
+        <h2>Seu backup já passou pelo teste da <span class="hl">recuperação?</span></h2>
+        <p class="lead">Backup gerenciado. Testes de restauração. Evidências.</p>
+      </div>
+      <div class="problem__grid">
+        <svg class="lava-art reveal" viewBox="0 10 600 450" aria-hidden="true">
+          <g fill="none" stroke="#24C9BD" stroke-linecap="round" filter="url(#lc-glow)">
+<path d="M463 350 438 365 417 376 396 384 375 390 354 395 332 397 311 398 289 397 268 395 247 392 227 387 206 381 185 373 163 364 138 350 114 335 97 323 84 311 74 299 66 287 60 274 57 262 55 250 57 237 61 225 69 212 79 200 94 188 112 176 137 162 164 148 186 139 207 132 227 126 248 121 268 118 289 116 311 115 332 116 353 119 374 123 395 129 416 137 438 147 463 161 487 176 505 189 518 201 529 213 537 225 542 237 543 250 542 262 538 274 532 286 524 298 514 310 501 322 485 335Z" stroke-width="1.6" opacity="0.55"/>
+<path d="M484 363 456 379 431 390 407 398 383 404 359 409 335 411 312 412 288 412 265 410 241 407 218 402 195 396 172 387 148 376 121 360 95 344 76 330 60 317 47 304 37 290 29 277 24 263 23 249 26 235 33 221 43 208 57 194 74 182 95 169 122 153 151 138 174 127 196 118 218 110 241 104 264 100 288 98 312 98 336 99 359 103 383 108 406 115 430 124 454 135 483 150 510 167 529 180 544 194 554 208 561 222 565 236 566 249 565 263 562 276 557 290 550 303 540 317 528 331 510 346Z" stroke-width="1.2" opacity="0.50"/>
+<path d="M504 374 471 391 443 402 416 411 390 417 365 422 339 426 313 428 287 428 261 426 235 423 210 417 185 409 160 399 135 387 103 370 73 353 51 338 32 324 16 310 4 295 -4 279 -7 264 -5 248 1 233 11 218 24 204 39 190 56 176 77 161 105 143 135 125 159 112 184 102 209 94 235 87 261 84 287 82 313 82 339 84 365 88 391 93 418 100 444 109 471 121 502 139 531 158 550 174 564 189 574 204 581 219 587 234 590 249 592 263 592 278 589 294 582 309 571 325 556 340 535 356Z" stroke-width="1.2" opacity="0.44"/>
+<path d="M519 383 484 401 454 414 426 424 399 432 371 438 343 442 314 444 286 443 258 440 230 436 203 429 176 421 148 412 118 400 81 383 46 364 20 348 -1 332 -16 316 -25 298 -29 281 -29 264 -24 248 -17 232 -7 216 4 200 17 184 33 168 53 151 84 130 116 111 144 97 172 87 200 78 229 72 257 68 286 66 314 65 343 66 372 70 401 75 430 84 458 95 485 110 517 130 546 151 565 169 581 185 594 201 606 216 615 232 623 248 628 264 628 281 623 298 614 315 599 332 578 348 553 364Z" stroke-width="1.6" opacity="0.39"/>
+<path d="M536 393 499 413 468 427 438 439 407 447 376 453 346 456 315 457 285 455 255 453 225 449 194 445 163 438 130 429 96 417 55 398 18 376 -7 357 -25 338 -37 319 -43 301 -45 283 -45 265 -43 247 -39 230 -33 213 -24 195 -12 177 6 159 29 140 63 119 100 98 132 84 162 73 192 64 222 56 253 50 284 47 316 46 348 47 379 53 409 61 438 73 466 87 494 103 527 124 560 145 584 162 605 179 625 195 641 211 654 229 662 247 664 265 660 284 651 302 637 320 619 337 597 354 571 371Z" stroke-width="1.2" opacity="0.33"/>
+<path d="M555 404 515 425 480 440 446 450 413 458 380 463 348 467 316 469 284 471 251 472 217 471 182 467 146 460 111 449 75 434 35 410 -1 384 -23 362 -38 342 -49 322 -58 303 -65 284 -69 265 -72 247 -71 228 -65 208 -55 189 -39 170 -18 151 9 132 46 109 85 87 118 70 150 56 182 45 215 36 248 30 283 28 317 29 351 35 383 43 413 54 443 66 473 80 504 95 544 114 584 135 615 152 641 169 663 188 679 207 689 226 692 246 690 266 683 285 672 305 658 323 640 342 619 361 593 381Z" stroke-width="1.2" opacity="0.28"/>
+<path d="M570 413 525 434 488 448 453 459 419 468 386 477 352 485 318 491 282 496 245 498 207 496 169 489 133 478 98 462 64 442 26 415 -9 388 -33 366 -53 345 -70 326 -84 306 -96 286 -103 266 -105 246 -102 225 -93 205 -79 184 -62 164 -40 144 -13 122 24 96 65 70 99 51 134 36 171 25 208 18 245 16 282 18 318 22 352 29 385 38 418 46 451 55 486 66 525 79 572 98 617 121 650 140 676 161 694 182 706 203 712 224 714 246 712 266 706 287 697 308 685 329 667 349 644 369 613 389Z" stroke-width="1.6" opacity="0.22"/>
+<path d="M578 418 533 440 497 457 464 473 430 488 395 501 359 513 320 520 280 523 240 521 200 513 163 501 127 485 93 467 59 446 17 420 -24 394 -54 373 -80 352 -101 332 -117 310 -127 289 -132 267 -131 245 -126 223 -117 202 -105 180 -90 157 -71 134 -45 109 -4 80 42 52 83 34 124 22 165 15 205 12 244 12 282 15 318 17 354 20 390 24 428 28 467 34 508 44 550 58 600 82 645 109 676 132 698 155 715 178 727 200 735 223 740 245 741 267 737 290 727 312 710 333 687 354 658 374 624 394Z" stroke-width="1.2" opacity="0.17"/>
+<path d="M594 426 552 455 518 479 483 500 446 517 407 531 364 539 321 541 279 537 238 529 198 518 161 505 124 490 86 474 47 456 -2 431 -49 405 -82 382 -108 359 -128 337 -141 314 -149 290 -154 268 -157 244 -156 221 -153 197 -146 172 -132 147 -109 121 -76 96 -25 67 30 43 77 29 122 20 165 14 205 10 243 7 281 3 319 -0 359 -2 400 -2 442 2 485 11 527 24 569 44 618 72 662 102 693 126 719 150 739 173 756 196 767 220 773 244 770 268 760 291 744 314 721 335 695 356 666 377 635 399Z" stroke-width="1.2" opacity="0.11"/>
+</g>
+<path d="M524 225 524 235 522 245 517 255 510 265 500 276 488 286 472 298 445 314 417 330 397 339 379 346 361 352 344 356 326 359 309 360 291 360 274 359 256 356 239 352 221 346 203 339 183 330 155 314 128 298 112 286 100 276 90 265 83 255 78 245 76 235 76 225 76 255 76 265 78 275 83 285 90 295 100 306 112 316 128 328 155 344 183 360 203 369 221 376 239 382 256 386 274 389 291 390 309 390 326 389 344 386 361 382 379 376 397 369 417 360 445 344 472 328 488 316 500 306 510 295 517 285 522 275 524 265 524 255Z" fill="#0A121B"/>
+<path d="M524 225 524 235 522 245 517 255 510 265 500 276 488 286 472 298 445 314 417 330 397 339 379 346 361 352 344 356 326 359 309 360 291 360 274 359 256 356 239 352 221 346 203 339 183 330 155 314 128 298 112 286 100 276 90 265 83 255 78 245 76 235 76 225 76 255 76 265 78 275 83 285 90 295 100 306 112 316 128 328 155 344 183 360 203 369 221 376 239 382 256 386 274 389 291 390 309 390 326 389 344 386 361 382 379 376 397 369 417 360 445 344 472 328 488 316 500 306 510 295 517 285 522 275 524 265 524 255Z" fill="url(#lc-side)" opacity=".9"/>
+<path d="M445 314 417 330 397 339 379 346 361 352 344 356 326 359 309 360 291 360 274 359 256 356 239 352 221 346 203 339 183 330 155 314 128 298 112 286 100 276 90 265 83 255 78 245 76 235 76 225 78 215 83 205 90 195 100 184 112 174 128 162 155 146 183 130 203 121 221 114 239 108 256 104 274 101 291 100 309 100 326 101 344 104 361 108 379 114 397 121 417 130 445 146 472 162 488 174 500 184 510 195 517 205 522 215 524 225 524 235 522 245 517 255 510 265 500 276 488 286 472 298Z" fill="#1A2633"/>
+<path d="M445 314 417 330 397 339 379 346 361 352 344 356 326 359 309 360 291 360 274 359 256 356 239 352 221 346 203 339 183 330 155 314 128 298 112 286 100 276 90 265 83 255 78 245 76 235 76 225 78 215 83 205 90 195 100 184 112 174 128 162 155 146 183 130 203 121 221 114 239 108 256 104 274 101 291 100 309 100 326 101 344 104 361 108 379 114 397 121 417 130 445 146 472 162 488 174 500 184 510 195 517 205 522 215 524 225 524 235 522 245 517 255 510 265 500 276 488 286 472 298Z" fill="#fff" filter="url(#lc-rock)" opacity=".95"/>
+<path d="M445 314 417 330 397 339 379 346 361 352 344 356 326 359 309 360 291 360 274 359 256 356 239 352 221 346 203 339 183 330 155 314 128 298 112 286 100 276 90 265 83 255 78 245 76 235 76 225 78 215 83 205 90 195 100 184 112 174 128 162 155 146 183 130 203 121 221 114 239 108 256 104 274 101 291 100 309 100 326 101 344 104 361 108 379 114 397 121 417 130 445 146 472 162 488 174 500 184 510 195 517 205 522 215 524 225 524 235 522 245 517 255 510 265 500 276 488 286 472 298Z" fill="none" stroke="#FF7A30" stroke-opacity=".35" stroke-width="1.2"/>
+<path d="M403 294 381 306 367 313 354 318 341 322 329 325 318 327 306 328 294 328 282 327 271 325 259 322 246 318 233 313 219 306 197 294 175 281 163 273 154 265 147 258 143 251 139 244 138 237 138 231 139 224 143 217 147 210 154 203 163 195 175 187 197 174 219 162 233 155 246 150 259 146 271 143 282 141 294 140 306 140 318 141 329 143 341 146 354 150 367 155 381 162 403 174 425 187 437 195 446 203 453 210 457 217 461 224 462 231 462 237 461 244 457 251 453 258 446 265 437 273 425 281Z" fill="none" stroke="#FF7A30" stroke-width="5" filter="url(#lc-blur)" opacity=".9"/>
+<path d="M456 205 456 211 454 218 451 224 446 231 440 238 431 245 419 253 399 265 378 277 364 284 352 289 340 293 328 296 317 297 306 298 294 298 283 297 272 296 260 293 248 289 236 284 222 277 201 265 181 253 169 245 160 238 154 231 149 224 146 218 144 211 144 235 146 242 149 248 154 255 160 262 169 269 181 277 201 289 222 301 236 308 248 313 260 317 272 320 283 321 294 322 306 322 317 321 328 320 340 317 352 313 364 308 378 301 399 289 419 277 431 269 440 262 446 255 451 248 454 242 456 235 456 229Z" fill="#0A121B"/>
+<path d="M456 205 456 211 454 218 451 224 446 231 440 238 431 245 419 253 399 265 378 277 364 284 352 289 340 293 328 296 317 297 306 298 294 298 283 297 272 296 260 293 248 289 236 284 222 277 201 265 181 253 169 245 160 238 154 231 149 224 146 218 144 211 144 235 146 242 149 248 154 255 160 262 169 269 181 277 201 289 222 301 236 308 248 313 260 317 272 320 283 321 294 322 306 322 317 321 328 320 340 317 352 313 364 308 378 301 399 289 419 277 431 269 440 262 446 255 451 248 454 242 456 235 456 229Z" fill="url(#lc-side)" opacity=".9"/>
+<path d="M399 265 378 277 364 284 352 289 340 293 328 296 317 297 306 298 294 298 283 297 272 296 260 293 248 289 236 284 222 277 201 265 181 253 169 245 160 238 154 231 149 224 146 218 144 211 144 205 146 198 149 192 154 185 160 178 169 171 181 163 201 151 222 139 236 132 248 127 260 123 272 120 283 119 294 118 306 118 317 119 328 120 340 123 352 127 364 132 378 139 399 151 419 163 431 171 440 178 446 185 451 192 454 198 456 205 456 211 454 218 451 224 446 231 440 238 431 245 419 253Z" fill="#1A2633"/>
+<path d="M399 265 378 277 364 284 352 289 340 293 328 296 317 297 306 298 294 298 283 297 272 296 260 293 248 289 236 284 222 277 201 265 181 253 169 245 160 238 154 231 149 224 146 218 144 211 144 205 146 198 149 192 154 185 160 178 169 171 181 163 201 151 222 139 236 132 248 127 260 123 272 120 283 119 294 118 306 118 317 119 328 120 340 123 352 127 364 132 378 139 399 151 419 163 431 171 440 178 446 185 451 192 454 198 456 205 456 211 454 218 451 224 446 231 440 238 431 245 419 253Z" fill="#fff" filter="url(#lc-rock)" opacity=".95"/>
+<path d="M399 265 378 277 364 284 352 289 340 293 328 296 317 297 306 298 294 298 283 297 272 296 260 293 248 289 236 284 222 277 201 265 181 253 169 245 160 238 154 231 149 224 146 218 144 211 144 205 146 198 149 192 154 185 160 178 169 171 181 163 201 151 222 139 236 132 248 127 260 123 272 120 283 119 294 118 306 118 317 119 328 120 340 123 352 127 364 132 378 139 399 151 419 163 431 171 440 178 446 185 451 192 454 198 456 205 456 211 454 218 451 224 446 231 440 238 431 245 419 253Z" fill="none" stroke="#FF7A30" stroke-opacity=".35" stroke-width="1.2"/>
+<path d="M358 242 344 250 335 254 328 257 322 259 315 261 309 262 303 262 297 262 291 262 285 261 278 259 272 257 265 254 256 250 242 242 228 233 221 229 216 224 212 221 209 217 208 213 207 210 207 206 208 203 209 199 212 195 216 192 221 187 228 183 242 174 256 166 265 162 272 159 278 157 285 155 291 154 297 154 303 154 309 154 315 155 322 157 328 159 335 162 344 166 358 174 372 183 379 187 384 192 388 195 391 199 392 203 393 206 393 210 392 213 391 217 388 221 384 224 379 229 372 233Z" fill="#120B08"/>
+<path d="M345 242 333 249 327 252 321 255 316 256 311 258 307 258 302 259 298 259 293 258 289 258 284 256 279 255 273 252 267 249 255 242 243 235 237 231 233 228 230 225 228 223 227 220 226 217 226 215 227 212 228 209 230 207 233 204 237 201 243 197 255 190 267 183 273 180 279 177 284 176 289 174 293 174 298 173 302 173 307 174 311 174 316 176 321 177 327 180 333 183 345 190 357 197 363 201 367 204 370 207 372 209 373 212 374 215 374 217 373 220 372 223 370 225 367 228 363 231 357 235Z" fill="#FF7A30" class="lava-pulse" filter="url(#lc-bigblur)" opacity=".85"/>
+<path d="M345 242 333 249 327 252 321 255 316 256 311 258 307 258 302 259 298 259 293 258 289 258 284 256 279 255 273 252 267 249 255 242 243 235 237 231 233 228 230 225 228 223 227 220 226 217 226 215 227 212 228 209 230 207 233 204 237 201 243 197 255 190 267 183 273 180 279 177 284 176 289 174 293 174 298 173 302 173 307 174 311 174 316 176 321 177 327 180 333 183 345 190 357 197 363 201 367 204 370 207 372 209 373 212 374 215 374 217 373 220 372 223 370 225 367 228 363 231 357 235Z" fill="url(#lc-core)"/>
+<path d="M324 226 317 230 314 232 311 233 308 234 306 234 303 235 301 235 299 235 297 235 294 234 292 234 289 233 286 232 283 230 276 226 269 222 266 220 264 218 263 217 261 215 261 214 260 213 260 211 261 210 261 209 263 207 264 206 266 204 269 202 276 198 283 194 286 192 289 191 292 190 294 190 297 189 299 189 301 189 303 189 306 190 308 190 311 191 314 192 317 194 324 198 331 202 334 204 336 206 337 207 339 209 339 210 340 211 340 213 339 214 339 215 337 217 336 218 334 220 331 222Z" fill="#FFD2A8" opacity=".55" filter="url(#lc-blur)"/>
+<path d="M358 242 344 250 335 254 328 257 322 259 315 261 309 262 303 262 297 262 291 262 285 261 278 259 272 257 265 254 256 250 242 242 228 233 221 229 216 224 212 221 209 217 208 213 207 210 207 206 208 203 209 199 212 195 216 192 221 187 228 183 242 174 256 166 265 162 272 159 278 157 285 155 291 154 297 154 303 154 309 154 315 155 322 157 328 159 335 162 344 166 358 174 372 183 379 187 384 192 388 195 391 199 392 203 393 206 393 210 392 213 391 217 388 221 384 224 379 229 372 233Z" fill="none" stroke="#FFB27A" stroke-opacity=".5" stroke-width="1.5"/>
+        </svg>
+        <div class="question-card glass reveal">
+          <h3>Quando foi seu último teste de <span class="hl">recuperação?</span></h3>
+          <p>Ter uma cópia é o começo. Testar é o próximo passo. Comece pelas perguntas que usamos na primeira conversa:</p>
+          <ol>
+            <li>Quais sistemas e arquivos são críticos?</li>
+            <li>Quem acompanha falhas e confirma a execução?</li>
+            <li>Onde ficam as cópias e quem tem acesso?</li>
+            <li>Qual perda de dados e interrupção o negócio tolera?</li>
+            <li>Quando foi o último teste e qual foi o resultado?</li>
+            <li>Existe um responsável substituto e um procedimento documentado?</li>
+          </ol>
+          <a class="btn btn--primary" href="#contato" data-interest="checklist"><svg class="i"><use href="#i-send"/></svg><span class="btn__sep"></span>Peça o checklist</a>
+          <p class="question-card__note"><svg class="i"><use href="#i-lock"/></svg> Para começar, não pedimos senhas, arquivos ou dados de clientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUÇÕES -->
+  <section class="section" id="solucoes">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Soluções</p>
+        <h2>Do dado protegido à <span class="hl">decisão informada.</span></h2>
+        <p class="lead">Começamos por uma dor e uma entrega. A expansão acontece depois de uso, capacidade e resultado observados.</p>
+        <ol class="cycle" aria-label="Ciclo de valor">
+          <li><span>Proteger</span></li>
+          <li><span>Organizar</span></li>
+          <li><span>Interpretar</span></li>
+          <li><span>Agir</span></li>
+        </ol>
+      </div>
+
+      <div class="cards">
+        <article class="card glass reveal">
+          <div class="card__top">
+            <span class="card__icon"><svg class="i"><use href="#i-shield"/></svg></span>
+            <span class="badge">Oferta principal</span>
+          </div>
+          <h3 class="pname"><b>Herta</b> Protect</h3>
+          <p class="card__text">Backup, monitoramento, testes de restauração e relatório mensal. Escopo e metas de recuperação definidos no diagnóstico.</p>
+          <a class="card__link" href="#protect">Ver o que está incluído <svg class="i"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="card glass reveal">
+          <div class="card__top">
+            <span class="card__icon"><svg class="i"><use href="#i-database"/></svg></span>
+            <span class="badge">Diagnóstico e projeto</span>
+          </div>
+          <h3 class="pname"><b>Herta</b> Data</h3>
+          <p class="card__text">Inventário, mapa de fontes, qualidade, acesso e governança dos dados que sustentam sua operação.</p>
+          <a class="card__link" href="#contato" data-interest="data">Conversar sobre seus dados <svg class="i"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="card glass reveal">
+          <div class="card__top">
+            <span class="card__icon"><svg class="i"><use href="#i-chart"/></svg></span>
+            <span class="badge">Pilotos pagos</span>
+          </div>
+          <h3 class="pname"><b>Herta</b> Insight</h3>
+          <p class="card__text">KPIs, integrações autorizadas, painéis e revisão gerencial. Uma pergunta de negócio por vez: rentabilidade, inadimplência ou produtividade.</p>
+          <a class="card__link" href="#contato" data-interest="data">Propor um piloto <svg class="i"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="card glass reveal">
+          <div class="card__top">
+            <span class="card__icon"><svg class="i"><use href="#i-receipt"/></svg></span>
+            <span class="badge">Em piloto</span>
+          </div>
+          <h3 class="pname"><b>Herta</b> Billing</h3>
+          <p class="card__text">Cobranças, recebimentos e indicadores em uma só visão, com Pix integrado a um provedor de pagamentos. Para clínicas.</p>
+          <a class="card__link" href="#billing">Conhecer a proposta <svg class="i"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="card card--featured glass reveal">
+          <div class="card__top">
+            <span class="card__icon"><svg class="i"><use href="#i-card"/></svg></span>
+            <span class="badge badge--orange badge--live">Em breve</span>
+          </div>
+          <h3 class="pname"><b>Herta</b> Gateway</h3>
+          <p class="card__text">Nosso gateway de pagamento: Pix, cartão, boleto e link de pagamento em uma única integração, com eventos confiáveis, conciliação organizada e o dinheiro liquidado direto na conta da sua empresa.</p>
+          <div class="card__actions">
+            <a class="btn btn--orange btn--sm" href="#gateway-interesse">Entrar na lista de interesse</a>
+            <a class="btn btn--ghost btn--sm" href="#gateway">Como vai funcionar</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="roadmap reveal">
+        <span class="roadmap__label">No radar</span>
+        <div class="roadmap__item"><svg class="i"><use href="#i-bolt"/></svg><span><strong>Action</strong>: alertas e automações com logs e tratamento de exceções, depois de fontes e regras de negócio estáveis.</span></div>
+        <div class="roadmap__item"><svg class="i"><use href="#i-sparkle"/></svg><span><strong>AI Analyst</strong>: consulta e análise assistida sobre dados preparados, com controles e revisão humana.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROTECT -->
+  <section class="section section--deep" id="protect">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Herta Protect</p>
+        <h2>Proteção e recuperação gerenciadas, <span class="hl">com evidência.</span></h2>
+        <p class="lead">Diagnóstico, implantação e acompanhamento mensal. Você sabe o que está protegido, o que foi testado e o que ainda precisa de ação.</p>
+      </div>
+
+      <div class="protect__grid">
+        <div class="panel glass reveal">
+          <h3>O que a entrega inclui</h3>
+          <ul class="check-list check-list--2col">
+            <li>Monitoramento automatizado das rotinas de cópia</li>
+            <li>Revisão humana em dias úteis, das 9h às 18h</li>
+            <li>Amostra mensal de restauração</li>
+            <li>Teste trimestral de recuperação de um objeto crítico acordado</li>
+            <li>Relatório mensal de uma página</li>
+            <li>Um responsável pela conta e caminho de escalonamento</li>
+          </ul>
+        </div>
+        <div class="report-card glass reveal" aria-label="Exemplo ilustrativo de relatório mensal">
+          <div class="report-card__head">
+            <span class="report-card__title">Relatório mensal</span>
+            <span class="tag-illus">Exemplo ilustrativo</span>
+          </div>
+          <ul>
+            <li><span>Cobertura dos sistemas críticos</span><span class="pill pill--ok">Acompanhada</span></li>
+            <li><span>Cópias válidas na janela</span><span class="pill pill--ok">Conferidas</span></li>
+            <li><span>Teste de recuperação</span><span class="pill pill--ok">Com aceite</span></li>
+            <li><span>Falhas registradas</span><span class="pill pill--warn">1 tratada</span></li>
+            <li><span>Próximas ações</span><span class="pill">2 abertas</span></li>
+          </ul>
+          <div class="report-card__foot">Uma página: cobertura, cópias, testes, falhas e ações.</div>
+        </div>
+      </div>
+
+      <div class="protect__row">
+        <div class="panel panel--dashed glass reveal">
+          <h3>O que fica fora, por escrito</h3>
+          <ul class="check-list x-list">
+            <li>Perícia forense e remoção de invasores</li>
+            <li>Reconstrução ilimitada de ambientes</li>
+            <li>Atendimento humano 24/7</li>
+            <li>Ambientes não homologados</li>
+          </ul>
+        </div>
+        <div class="note reveal">
+          <svg class="i"><use href="#i-alert"/></svg>
+          <p><strong>Sem proteção absoluta, com metas claras.</strong> As metas de recuperação (RPO: quanto de alteração o negócio tolera perder; RTO: em quanto tempo retomar) são definidas por sistema, depois do teste, e registradas na proposta. Não prometemos invulnerabilidade: entregamos evidência do que foi verificado.</p>
+        </div>
+      </div>
+
+      <div class="features4">
+        <div class="feature reveal"><span class="feature__num">01</span><h3>Teste com aceite</h3><p>Restauração funcional validada com você, com limites documentados.</p></div>
+        <div class="feature reveal"><span class="feature__num">02</span><h3>Relatório de uma página</h3><p>Cobertura, cópias válidas, testes, falhas e ações, todo mês.</p></div>
+        <div class="feature reveal"><span class="feature__num">03</span><h3>Um responsável</h3><p>Uma pessoa acompanha sua conta, com caminho claro de escalonamento.</p></div>
+        <div class="feature reveal"><span class="feature__num">04</span><h3>Saída planejada</h3><p>Portabilidade, documentação e plano de encerramento definidos desde o início.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO TRABALHAMOS -->
+  <section class="section" id="como-trabalhamos">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Como trabalhamos</p>
+        <h2>Da primeira conversa à <span class="hl">rotina mensal.</span></h2>
+        <p class="lead">Cada etapa tem uma entrega concreta. Se não houver lacuna relevante no seu ambiente, dizemos isso e não vendemos duplicação.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step glass reveal"><h3>Conversa</h3><p>Entendemos a dor, o impacto, o responsável, o ambiente e o prazo, sem acessar dados sensíveis.</p></li>
+        <li class="step glass reveal"><h3>Diagnóstico</h3><p>Mapa de sistemas críticos, responsabilidades e lacunas, com autorização e entrega documentada.</p></li>
+        <li class="step glass reveal"><h3>Proposta</h3><p>Volume protegido, rotinas, exclusões, dependências, prazo e preço, tudo explícito.</p></li>
+        <li class="step glass reveal"><h3>Implantação</h3><p>Inventário autorizado, configuração, primeiro teste e aceite.</p></li>
+        <li class="step glass reveal"><h3>Recorrência</h3><p>Acompanhamento e revisão periódica de resultados, custos e escopo.</p></li>
+      </ol>
+
+      <div class="timeline glass reveal">
+        <div class="timeline__head">
+          <h3>Implantação em cerca de 10 dias úteis</h3>
+          <p>Estimativa: dependências do seu lado podem alterar o cronograma.</p>
+        </div>
+        <ol class="timeline__track">
+          <li class="timeline__item"><span class="timeline__day">D1–2</span><p>Inventário e acessos</p></li>
+          <li class="timeline__item"><span class="timeline__day">D3–4</span><p>Arquitetura e política</p></li>
+          <li class="timeline__item"><span class="timeline__day">D5–6</span><p>Configuração e primeira cópia</p></li>
+          <li class="timeline__item"><span class="timeline__day">D7–8</span><p>Teste isolado com usuário</p></li>
+          <li class="timeline__item"><span class="timeline__day">D9</span><p>Correções</p></li>
+          <li class="timeline__item"><span class="timeline__day">D10</span><p>Aceite e treinamento</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- BILLING -->
+  <section class="section section--deep" id="billing" aria-labelledby="billing-title">
+    <svg class="deco deco--tr" viewBox="0 0 420 420" aria-hidden="true"><path d="M420 40 250 150v270"/><path d="M420 120 300 198v222" opacity=".5"/></svg>
+    <div class="container billing__grid">
+      <div class="billing__copy reveal">
+        <div class="lockup">
+          <svg class="lockup__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+          <div><span class="lockup__name"><b>Herta</b> Billing</span><span class="lockup__by">por <b>HertaCloud</b></span></div>
+        </div>
+        <p><span class="badge">Em piloto</span></p>
+        <h2 id="billing-title">Seus recebimentos, claros. Suas decisões, <span class="hl">mais inteligentes.</span></h2>
+        <p class="lead">Cobranças, recebimentos e indicadores em uma só visão.</p>
+        <p class="muted">O Herta Billing está sendo estruturado para clínicas acompanharem o que entrou e o que falta receber. A proposta inicial reúne cobrança por Pix integrado a um provedor de pagamentos e uma visão organizada do financeiro. Recursos e escopo são validados no piloto.</p>
+        <ul class="check-list">
+          <li>Usuários e perfis de acesso, com cadastro mínimo</li>
+          <li>Parcelas, status e cobrança por Pix via provedor</li>
+          <li>Conciliação e painel de recebimentos</li>
+          <li>Sem prontuário, procedimento ou diagnóstico na cobrança</li>
+        </ul>
+        <a class="btn btn--outline" href="#contato" data-interest="billing"><svg class="i"><use href="#i-send"/></svg><span>Conheça a proposta. <span class="hl">Fale com a gente.</span></span></a>
+      </div>
+
+      <div class="stage reveal" aria-label="Interface ilustrativa do Herta Billing">
+        <p class="stage__title">O que entrou?<br><span class="hl">O que falta receber?</span></p>
+        <div class="status-cards">
+          <div class="status">
+            <span class="status__icon"><svg class="i"><use href="#i-check"/></svg></span>
+            <span class="status__label">Recebido</span>
+            <div class="status__bar" style="--w:64%"><i></i></div>
+            <div class="status__bar--muted"></div>
+          </div>
+          <div class="status">
+            <span class="status__icon"><svg class="i"><use href="#i-clock"/></svg></span>
+            <span class="status__label">A receber</span>
+            <div class="status__bar" style="--w:42%"><i></i></div>
+            <div class="status__bar--muted"></div>
+          </div>
+          <div class="status">
+            <span class="status__icon"><svg class="i"><use href="#i-bang"/></svg></span>
+            <span class="status__label">Em atraso</span>
+            <div class="status__bar" style="--w:30%"><i></i></div>
+            <div class="status__bar--muted"></div>
+          </div>
+        </div>
+        <span class="tag-illus">Interface ilustrativa</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GATEWAY -->
+  <section class="section gw" id="gateway" aria-labelledby="gw-title">
+    <div class="container">
+      <div class="gw__hero">
+        <div class="reveal">
+          <div class="lockup">
+            <svg class="lockup__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+            <div><span class="lockup__name"><b>Herta</b> Gateway</span><span class="lockup__by">por <b>HertaCloud</b></span></div>
+          </div>
+          <div class="gw__status">
+            <span class="badge badge--orange badge--live">Em breve</span>
+            <span class="badge">Lista de interesse aberta</span>
+          </div>
+          <h2 id="gw-title">Pix, cartão e boleto. <span class="hl">Uma integração só.</span></h2>
+          <p class="lead">Estamos construindo o gateway de pagamento da HertaCloud: uma camada única para sua empresa cobrar, acompanhar e conciliar recebimentos. O dinheiro vai direto para a sua conta, por meio de instituições de pagamento autorizadas.</p>
+          <ul class="chips" aria-label="Meios de pagamento previstos">
+            <li><svg class="i"><use href="#i-pix"/></svg>Pix</li>
+            <li><svg class="i"><use href="#i-card"/></svg>Cartão</li>
+            <li><svg class="i"><use href="#i-barcode"/></svg>Boleto</li>
+            <li><svg class="i"><use href="#i-link"/></svg>Link de pagamento</li>
+          </ul>
+          <div class="gw__actions">
+            <a class="btn btn--orange" href="#gateway-interesse">Entrar na lista de interesse</a>
+            <a class="btn btn--ghost" href="#gateway-como">Ver como vai funcionar</a>
+          </div>
+        </div>
+
+        <div class="reveal" aria-hidden="true">
+          <div class="pay-card">
+            <div class="pay-card__head"><span>Cobrança · pedido-1042</span><span class="pay-card__tag">Interface ilustrativa</span></div>
+            <div class="pay-card__amount"><strong>R$ 150,00</strong><span class="badge">Pix</span></div>
+            <ol class="pay-steps">
+              <li><span class="pay-steps__dot"></span><div><strong>Cobrança criada</strong><span>Pela API ou pelo painel</span></div></li>
+              <li><span class="pay-steps__dot"></span><div><strong>Pagamento recebido</strong><span>Processado pelo provedor autorizado</span></div></li>
+              <li><span class="pay-steps__dot"></span><div><strong>Evento confirmado</strong><span>Webhook assinado e idempotente</span></div></li>
+              <li><span class="pay-steps__dot"></span><div><strong>Conciliada</strong><span>Valor, tarifa e liquidação conferidos</span></div></li>
+            </ol>
+            <div class="pay-card__foot"><svg class="i"><use href="#i-bank"/></svg> Liquidação: direto na conta da sua empresa</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gw-block">
+        <h3 class="reveal">Por que um gateway da HertaCloud</h3>
+        <p class="muted reveal">Receber deveria ser a parte simples. Na prática, cada meio de pagamento traz um painel, um relatório e um jeito diferente de confirmar o que entrou.</p>
+        <div class="problems">
+          <div class="problem glass reveal"><svg class="i"><use href="#i-layers"/></svg><strong>Um painel para cada meio</strong><p>Pix, cartão e boleto em provedores e relatórios diferentes.</p></div>
+          <div class="problem glass reveal"><svg class="i"><use href="#i-alert"/></svg><strong>Status desencontrado</strong><p>O sistema diz uma coisa, o provedor outra e o banco uma terceira.</p></div>
+          <div class="problem glass reveal"><svg class="i"><use href="#i-list"/></svg><strong>Conciliação na mão</strong><p>Fim de mês linha a linha na planilha para saber o que de fato entrou.</p></div>
+          <div class="problem glass reveal"><svg class="i"><use href="#i-undo"/></svg><strong>Exceções que escapam</strong><p>Evento duplicado vira baixa duplicada; estornos somem do controle.</p></div>
+        </div>
+      </div>
+
+      <div class="gw-block">
+        <h3 class="reveal">O que estamos construindo</h3>
+        <p class="muted reveal">Recursos previstos para o lançamento.</p>
+        <div class="gw-features">
+          <div class="gw-feature glass reveal"><span class="gw-feature__icon"><svg class="i"><use href="#i-pix"/></svg></span><div><h4>Pix</h4><p>QR Code dinâmico e copia e cola, com confirmação por evento.</p></div></div>
+          <div class="gw-feature glass reveal"><span class="gw-feature__icon"><svg class="i"><use href="#i-card"/></svg></span><div><h4>Cartão de crédito</h4><p>Por provedor autorizado, com os dados do cartão tratados no ambiente do provedor.</p></div></div>
+          <div class="gw-feature glass reveal"><span class="gw-feature__icon"><svg class="i"><use href="#i-barcode"/></svg></span><div><h4>Boleto</h4><p>Emissão com vencimento e baixa automática quando o pagamento é confirmado.</p></div></div>
+          <div class="gw-feature glass reveal"><span class="gw-feature__icon"><svg class="i"><use href="#i-link"/></svg></span><div><h4>Link de pagamento</h4><p>Para cobrar sem integrar: crie e envie pelo canal que preferir.</p></div></div>
+          <div class="gw-feature glass reveal"><span class="gw-feature__icon"><svg class="i"><use href="#i-code"/></svg></span><div><h4>API e webhooks</h4><p>Uma integração para todos os meios, com eventos assinados e idempotentes.</p></div></div>
+          <div class="gw-feature glass reveal"><span class="gw-feature__icon"><svg class="i"><use href="#i-sync"/></svg></span><div><h4>Conciliação</h4><p>Transações, tarifas, estornos e liquidações casados com os seus registros.</p></div></div>
+          <div class="gw-feature glass reveal"><span class="gw-feature__icon"><svg class="i"><use href="#i-layout"/></svg></span><div><h4>Painel de recebimentos</h4><p>O que entrou, o que falta receber e o que exige ação.</p></div></div>
+          <div class="gw-feature glass reveal"><span class="gw-feature__icon"><svg class="i"><use href="#i-undo"/></svg></span><div><h4>Estornos e exceções</h4><p>Estorno, pagamento parcial, duplicidade e atraso de evento tratados e registrados.</p></div></div>
+          <div class="gw-feature glass reveal"><span class="gw-feature__icon"><svg class="i"><use href="#i-flask"/></svg></span><div><h4>Ambiente de testes</h4><p>Sandbox para homologar a integração antes de ir para produção.</p></div></div>
+        </div>
+        <p class="disclaimer reveal">Escopo final, prazos, tarifas e condições serão confirmados antes da abertura comercial. Quem estiver na lista de interesse recebe as novidades primeiro.</p>
+      </div>
+
+      <div class="gw-block" id="gateway-como">
+        <h3 class="reveal">Como vai funcionar</h3>
+        <p class="muted reveal">A HertaCloud orquestra a integração, os eventos e a conciliação. Quem processa o pagamento é uma instituição autorizada, e quem recebe o dinheiro é você.</p>
+        <ol class="flow-steps">
+          <li class="glass reveal"><span class="flow-steps__icon"><svg class="i"><use href="#i-server"/></svg></span><h4>Seu sistema ou link</h4><p>Você cria a cobrança pela API, pelo painel ou por um link de pagamento.</p></li>
+          <li class="glass is-core reveal"><span class="flow-steps__icon"><svg class="i"><use href="#i-logo"/></svg></span><h4>Herta Gateway</h4><p>Valida, registra e encaminha a transação ao meio de pagamento escolhido.</p></li>
+          <li class="glass reveal"><span class="flow-steps__icon"><svg class="i"><use href="#i-shield"/></svg></span><h4>Provedor autorizado</h4><p>Processa o Pix, o cartão ou o boleto.</p></li>
+          <li class="glass is-end reveal"><span class="flow-steps__icon"><svg class="i"><use href="#i-bank"/></svg></span><h4>Conta da sua empresa</h4><p>O valor é liquidado direto para você, sem custódia da HertaCloud.</p></li>
+        </ol>
+        <div class="flow-return reveal">
+          <strong>De volta para você:</strong>
+          <span>webhook assinado</span>
+          <span>baixa automática no seu sistema</span>
+          <span>conciliação no painel</span>
+        </div>
+      </div>
+
+      <div class="gw-block dev">
+        <div class="reveal">
+          <h3>Feito para integrar</h3>
+          <p class="muted">Uma chamada para criar a cobrança, um evento para confirmar o pagamento. A chave de idempotência evita cobranças e baixas em dobro.</p>
+          <div class="code" role="figure" aria-label="Exemplo ilustrativo de chamada de API">
+            <div class="code__bar"><i></i><i></i><i></i><span>Exemplo ilustrativo</span></div>
+<pre><code><span class="t-c"># Criar uma cobrança</span>
+<span class="t-m">POST</span> /v1/cobrancas
+Idempotency-Key: <span class="t-s">pedido-1042</span>
+
+{
+  <span class="t-k">"valor"</span>: <span class="t-n">15000</span>,
+  <span class="t-k">"moeda"</span>: <span class="t-s">"BRL"</span>,
+  <span class="t-k">"meio"</span>: <span class="t-s">"pix"</span>,
+  <span class="t-k">"vencimento"</span>: <span class="t-s">"2026-11-30"</span>,
+  <span class="t-k">"referencia"</span>: <span class="t-s">"pedido-1042"</span>
+}
+
+<span class="t-c"># Evento recebido no seu webhook</span>
+{
+  <span class="t-k">"evento"</span>: <span class="t-s">"cobranca.paga"</span>,
+  <span class="t-k">"referencia"</span>: <span class="t-s">"pedido-1042"</span>,
+  <span class="t-k">"valor"</span>: <span class="t-n">15000</span>,
+  <span class="t-k">"status"</span>: <span class="t-s">"paga"</span>
+}</code></pre>
+          </div>
+          <p class="disclaimer">Endpoints e campos serão definidos na documentação oficial de lançamento.</p>
+        </div>
+
+        <div class="reveal">
+          <h3>Princípios do projeto</h3>
+          <p class="muted">Pagamento envolve dinheiro e dados de pessoas. Por isso partimos destas regras:</p>
+          <ul class="principles">
+            <li><span class="principles__icon"><svg class="i"><use href="#i-bank"/></svg></span><div><strong>Sem custódia</strong><p>O valor é liquidado na conta da sua empresa por instituição autorizada. A HertaCloud não guarda o seu dinheiro.</p></div></li>
+            <li><span class="principles__icon"><svg class="i"><use href="#i-sync"/></svg></span><div><strong>Eventos confiáveis</strong><p>Webhooks assinados, idempotentes e com reenvio: evento repetido não gera baixa repetida.</p></div></li>
+            <li><span class="principles__icon"><svg class="i"><use href="#i-layers"/></svg></span><div><strong>Isolamento entre contas</strong><p>Dados, credenciais e transações de cada cliente segregados.</p></div></li>
+            <li><span class="principles__icon"><svg class="i"><use href="#i-filter"/></svg></span><div><strong>Dados mínimos</strong><p>Só o necessário para cobrar. Em clínicas, nada de prontuário, procedimento ou diagnóstico na cobrança.</p></div></li>
+            <li><span class="principles__icon"><svg class="i"><use href="#i-key"/></svg></span><div><strong>Acesso controlado e auditável</strong><p>Contas individuais, autenticação em dois fatores, menor privilégio e registro de quem fez o quê.</p></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="gw-block">
+        <h3 class="reveal">Billing ou Gateway?</h3>
+        <p class="muted reveal">São produtos diferentes e complementares.</p>
+        <div class="compare">
+          <article class="compare__col glass reveal">
+            <header><h4 class="pname"><b>Herta</b> Billing</h4><span class="badge">Em piloto</span></header>
+            <p>Gestão de cobranças e recebimentos para clínicas. Para quem quer organizar a rotina financeira sem integrar sistemas.</p>
+            <ul class="check-list">
+              <li>Cadastro mínimo, parcelas e status</li>
+              <li>Pix integrado a um provedor de pagamentos</li>
+              <li>Painel de recebimentos e conciliação</li>
+            </ul>
+          </article>
+          <article class="compare__col compare__col--gw glass reveal">
+            <header><h4 class="pname"><b>Herta</b> Gateway</h4><span class="badge badge--orange">Em breve</span></header>
+            <p>Infraestrutura de pagamento. Para quem quer integrar recebimentos ao próprio sistema, site ou rotina de cobrança.</p>
+            <ul class="check-list">
+              <li>Pix, cartão, boleto e link de pagamento</li>
+              <li>API, webhooks e ambiente de testes</li>
+              <li>Conciliação de transações, tarifas e liquidações</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <div class="interest glass reveal" id="gateway-interesse">
+        <div>
+          <span class="badge badge--orange badge--live">Em breve</span>
+          <h3>Entre na lista de interesse do <span class="hl-orange">Herta Gateway</span></h3>
+          <p class="muted">Conte um pouco sobre como sua empresa recebe hoje. As respostas ajudam a definir o lançamento.</p>
+          <ul class="check-list">
+            <li>Novidades e data de lançamento em primeira mão</li>
+            <li>Convite para a fase de testes, conforme o perfil</li>
+            <li>Sem compromisso de contratação</li>
+          </ul>
+        </div>
+
+        <form class="form" data-form data-subject="Lista de interesse · Herta Gateway" data-success="Pronto! Você está na lista de interesse do Herta Gateway. Avisaremos sobre as próximas etapas." novalidate>
+          <input type="hidden" name="origem" value="site · lista Herta Gateway">
+          <div class="field">
+            <label for="gw-nome">Nome</label>
+            <input id="gw-nome" name="nome" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="gw-email">E-mail corporativo</label>
+            <input id="gw-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="gw-empresa">Empresa</label>
+            <input id="gw-empresa" name="empresa" type="text" autocomplete="organization" required>
+          </div>
+          <div class="field">
+            <label for="gw-segmento">Segmento</label>
+            <select id="gw-segmento" name="segmento" required>
+              <option value="">Selecione</option>
+              <option>Clínica ou consultório</option>
+              <option>Escritório contábil</option>
+              <option>Prestação de serviços</option>
+              <option>Software (SaaS)</option>
+              <option>Comércio / vendas online</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="gw-volume">Volume mensal recebido <span class="opt">(estimativa)</span></label>
+            <select id="gw-volume" name="volume_mensal">
+              <option value="">Prefiro não informar</option>
+              <option>Até R$ 50 mil</option>
+              <option>De R$ 50 mil a R$ 200 mil</option>
+              <option>De R$ 200 mil a R$ 1 milhão</option>
+              <option>Acima de R$ 1 milhão</option>
+            </select>
+          </div>
+          <fieldset class="field field--full">
+            <legend>Meios de interesse</legend>
+            <div class="options">
+              <label class="option"><input type="checkbox" name="meios" value="Pix"> Pix</label>
+              <label class="option"><input type="checkbox" name="meios" value="Cartão"> Cartão</label>
+              <label class="option"><input type="checkbox" name="meios" value="Boleto"> Boleto</label>
+              <label class="option"><input type="checkbox" name="meios" value="Link de pagamento"> Link de pagamento</label>
+              <label class="option"><input type="checkbox" name="meios" value="API"> Integração via API</label>
+            </div>
+          </fieldset>
+          <div class="field field--full">
+            <label for="gw-msg">Como você recebe hoje? <span class="opt">(opcional)</span></label>
+            <textarea id="gw-msg" name="mensagem" placeholder="Ex.: usamos dois provedores e conciliamos em planilha no fim do mês."></textarea>
+          </div>
+          <div class="field field--full">
+            <label class="consent"><input type="checkbox" name="consentimento" value="sim" required> Concordo em receber contato da HertaCloud sobre o Herta Gateway. Usaremos estes dados apenas para essa finalidade.</label>
+          </div>
+          <div class="form__foot">
+            <button class="btn btn--orange" type="submit">Quero entrar na lista</button>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM -->
+  <section class="section section--deep" id="para-quem">
+    <svg class="deco deco--bl" viewBox="0 0 420 420" aria-hidden="true"><path d="M420 40 250 150v270"/><path d="M420 120 300 198v222" opacity=".5"/></svg>
+    <div class="container">
+      <div class="banner glass reveal">
+        <div>
+          <p class="eyebrow">Para quem</p>
+          <h2>Seu escritório muda.<br><span class="hl">A continuidade precisa acompanhar.</span></h2>
+          <p class="lead">Mapeie os dados e sistemas essenciais para a operação.</p>
+          <a class="btn btn--primary" href="#contato" data-interest="checklist">Vamos conversar sobre seu ambiente? <svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+        <svg class="banner__art" viewBox="0 0 360 300" aria-hidden="true">
+          <g fill="none" stroke="#24C9BD" stroke-linecap="round" stroke-linejoin="round" filter="url(#f-glow)">
+            <path d="M118 128a34 34 0 0 1 8-66 46 46 0 0 1 86-14 38 38 0 0 1 58 28 30 30 0 0 1-6 52Z" stroke-width="2.5" fill="rgba(36,201,189,.10)"/>
+            <path d="M150 128v40h-60v34M190 128v66M232 128v30h66v40" stroke-width="1.6" opacity=".8"/>
+          </g>
+          <g>
+            <rect x="52" y="202" width="76" height="42" rx="7" fill="#162a40" stroke="rgba(243,245,244,.18)"/>
+            <rect x="52" y="246" width="76" height="42" rx="7" fill="#132538" stroke="rgba(243,245,244,.14)"/>
+            <rect x="152" y="194" width="76" height="42" rx="7" fill="#162a40" stroke="rgba(243,245,244,.18)"/>
+            <rect x="260" y="198" width="76" height="42" rx="7" fill="#162a40" stroke="rgba(243,245,244,.18)"/>
+            <rect x="260" y="242" width="76" height="42" rx="7" fill="#132538" stroke="rgba(243,245,244,.14)"/>
+            <g stroke="#24C9BD" stroke-width="3" stroke-linecap="round" filter="url(#f-glow)">
+              <path d="M66 223h24M66 267h18M166 215h28M274 219h24M274 263h16"/>
+            </g>
+            <circle cx="114" cy="223" r="3" fill="#FF7A30"/><circle cx="214" cy="215" r="3" fill="#24C9BD"/><circle cx="322" cy="219" r="3" fill="#24C9BD"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="segments">
+        <article class="segment segment--featured glass reveal">
+          <span class="badge">Foco inicial</span>
+          <h3>Escritórios contábeis</h3>
+          <p>Escritórios de 10 a 30 pessoas, onde arquivos, bases e prazos não podem esperar.</p>
+          <ul class="check-list">
+            <li>Arquivos e bases homologadas protegidos</li>
+            <li>Evidências de recuperação documentadas</li>
+            <li>Cooperação com a TI ou o prestador atual</li>
+          </ul>
+          <span class="segment__meta">Começa com: responsável pelos sistemas e autorização de teste definidos</span>
+        </article>
+        <article class="segment glass reveal">
+          <h3>Clínicas</h3>
+          <p>Proteção administrativa, painel financeiro e cobranças com o Herta Billing e, em breve, o Herta Gateway.</p>
+          <span class="segment__meta">Com minimização de dados desde o início</span>
+        </article>
+        <article class="segment glass reveal">
+          <h3>Assessorias financeiras</h3>
+          <p>Dados administrativos próprios e indicadores autorizados.</p>
+          <span class="segment__meta">Nenhuma extração de plataforma sem permissão</span>
+        </article>
+        <article class="segment glass reveal">
+          <h3>Agro</h3>
+          <p>Consultorias, laudos e projetos; depois, ERP administrativo.</p>
+          <span class="segment__meta">Conectividade e volume medidos antes</span>
+        </article>
+        <article class="segment glass reveal">
+          <h3>Setor público</h3>
+          <p>Serviços modulares, com medição e evidências.</p>
+          <span class="segment__meta">Conforme edital e habilitação</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARCA -->
+  <section class="section" id="marca">
+    <div class="container brand">
+      <div class="brand__mark reveal" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><use href="#i-logo"/></svg>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">A marca</p>
+        <h2>Fluxo: informação em movimento, <span class="hl">base sólida.</span></h2>
+        <p class="lead">A HertaCloud nasce de uma ideia: dados precisam estar protegidos e fazer sentido para quem decide.</p>
+        <p class="muted">O monograma HC em fita contínua representa informação em movimento, continuidade operacional e integração. A inspiração no Erta Ale aparece na energia do detalhe laranja e na solidez da base escura. É uma inspiração criativa, não uma promessa técnica de invulnerabilidade.</p>
+        <ul class="palette" aria-label="Paleta da marca">
+          <li class="swatch"><div class="swatch__color" style="background:#101C2B;box-shadow:inset 0 0 0 1px rgba(243,245,244,.15)"></div><div class="swatch__label"><b>Azul profundo</b><code>#101C2B</code></div></li>
+          <li class="swatch"><div class="swatch__color" style="background:#007F82"></div><div class="swatch__label"><b>Verde petróleo</b><code>#007F82</code></div></li>
+          <li class="swatch"><div class="swatch__color" style="background:#24C9BD"></div><div class="swatch__label"><b>Turquesa</b><code>#24C9BD</code></div></li>
+          <li class="swatch"><div class="swatch__color" style="background:#F36B38"></div><div class="swatch__label"><b>Laranja</b><code>#F36B38</code></div></li>
+          <li class="swatch"><div class="swatch__color" style="background:#F3F5F4"></div><div class="swatch__label"><b>Branco suave</b><code>#F3F5F4</code></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DÚVIDAS -->
+  <section class="section section--deep" id="duvidas">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow">Dúvidas</p>
+        <h2>Perguntas <span class="hl">frequentes.</span></h2>
+      </div>
+      <div class="faq">
+        <div class="faq__group reveal">
+          <h3>Sobre a HertaCloud</h3>
+          <details><summary>O que a HertaCloud protege?</summary><p>Os dados e sistemas definidos no diagnóstico: arquivos, bases homologadas e rotinas críticas do seu ambiente. O escopo depende do ambiente e fica documentado na proposta, com volume, retenção, frequência, local de armazenamento e limites.</p></details>
+          <details><summary>Como vocês definem o escopo?</summary><p>Começamos com um diagnóstico: mapeamos sistemas críticos, responsáveis, onde ficam as cópias e quanto de perda e interrupção o negócio tolera. A proposta traz volume protegido, rotinas, exclusões, dependências, prazo e preço.</p></details>
+          <details><summary>Como funcionam os testes de recuperação?</summary><p>Fazemos restaurações em ambiente isolado, com a participação de um usuário seu, aceite e resultado documentado. A rotina inclui uma amostra mensal de restauração e um teste trimestral de um objeto crítico acordado.</p></details>
+          <details><summary>Vocês garantem que eu nunca vou perder dados?</summary><p>Não prometemos proteção absoluta. Trabalhamos com metas de recuperação por sistema (RPO e RTO), definidas depois do teste, e com evidências do que foi de fato verificado.</p></details>
+          <details><summary>Preciso enviar senhas ou arquivos para começar?</summary><p>Não. A primeira conversa não exige arquivos, senhas nem dados de clientes. Acessos só depois de autorização formal, com contas individuais, autenticação em dois fatores e menor privilégio.</p></details>
+          <details><summary>Já tenho TI ou um prestador. Faz sentido?</summary><p>Sim, para cooperar: mapeamos lacunas, documentamos testes e acordamos responsabilidades. Se não houver lacuna relevante, dizemos isso e não vendemos duplicação.</p></details>
+          <details><summary>Ter backup me deixa em conformidade com a LGPD?</summary><p>Não automaticamente. Backup e software ajudam, mas a conformidade depende também de papéis definidos, contratos, processos e da resposta a incidentes.</p></details>
+        </div>
+        <div class="faq__group reveal">
+          <h3>Sobre o Herta Billing <span class="badge badge--xs">Em piloto</span></h3>
+          <details><summary>O Herta Billing já está disponível?</summary><p>Está em piloto. Estamos abrindo conversas com clínicas que querem participar da construção; recursos, suporte, contrato e preço são definidos a partir do piloto.</p></details>
+          <details><summary>O Billing acessa dados clínicos?</summary><p>Não. A cobrança usa um identificador administrativo e uma descrição neutra, sem prontuário, procedimento ou plano clínico. Mesmo assim, fazemos avaliação de privacidade, porque cobranças podem permitir inferências de saúde.</p></details>
+        </div>
+        <div class="faq__group reveal">
+          <h3>Sobre o Herta Gateway <span class="badge badge--orange badge--xs">Em breve</span></h3>
+          <details><summary>Quando o Herta Gateway será lançado?</summary><p>Ainda não há data pública. Quem estiver na lista de interesse recebe o anúncio primeiro e pode ser convidado para a fase de testes, conforme o perfil.</p></details>
+          <details><summary>Quanto vai custar?</summary><p>Planos e tarifas ainda estão em definição e serão publicados antes da abertura comercial. As tarifas de terceiros, como as dos provedores de pagamento, serão sempre explícitas.</p></details>
+          <details><summary>A HertaCloud vai ficar com o meu dinheiro?</summary><p>Não. O modelo previsto é a liquidação direta na conta da sua empresa por instituição de pagamento autorizada. A HertaCloud cuida da integração, dos eventos e da conciliação.</p></details>
+          <details><summary>Preciso de um desenvolvedor para usar?</summary><p>Não necessariamente. O link de pagamento permite cobrar sem integração. Para automatizar cobranças e baixas no seu sistema, a API e os webhooks são o caminho.</p></details>
+          <details><summary>Qual a diferença para o Herta Billing?</summary><p>O Billing é uma ferramenta de gestão de cobranças e recebimentos para clínicas, hoje em piloto. O Gateway é a infraestrutura de pagamento para empresas que querem integrar recebimentos ao próprio sistema.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section" id="contato">
+    <div class="container contact">
+      <div class="reveal">
+        <p class="eyebrow">Contato</p>
+        <h2>Fale com a <span class="hl">HertaCloud.</span></h2>
+        <p class="lead">Peça o checklist de recuperação, conte qual desafio quer resolver ou fale sobre o Billing e o Gateway. Combinamos uma conversa curta pelo canal de sua preferência.</p>
+        <ul class="channels">
+          <li data-channel="email" hidden><a href="#"><svg class="i"><use href="#i-mail"/></svg><span data-channel-text></span></a></li>
+          <li data-channel="whatsapp" hidden><a href="#" target="_blank" rel="noopener"><svg class="i"><use href="#i-chat"/></svg><span>WhatsApp</span></a></li>
+          <li data-channel="instagram" hidden><a href="#" target="_blank" rel="noopener"><svg class="i"><use href="#i-insta"/></svg><span>Instagram</span></a></li>
+        </ul>
+        <div class="safety">
+          <svg class="i"><use href="#i-lock"/></svg>
+          <p><strong>Não envie senhas, arquivos ou dados de clientes por aqui.</strong> Para começar, basta saber o tipo da sua empresa e o desafio que você quer resolver.</p>
+        </div>
+      </div>
+
+      <div class="form-card glass reveal">
+        <form class="form" data-form data-subject="Contato pelo site · HertaCloud" data-success="Mensagem enviada. Obrigado pelo contato! Responderemos pelo e-mail informado." novalidate>
+          <input type="hidden" name="origem" value="site · contato">
+          <div class="field">
+            <label for="ct-nome">Nome</label>
+            <input id="ct-nome" name="nome" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="ct-email">E-mail</label>
+            <input id="ct-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="ct-empresa">Empresa <span class="opt">(opcional)</span></label>
+            <input id="ct-empresa" name="empresa" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="ct-tipo">Tipo de empresa</label>
+            <select id="ct-tipo" name="tipo_empresa" required>
+              <option value="">Selecione</option>
+              <option>Escritório contábil</option>
+              <option>Clínica ou consultório</option>
+              <option>Assessoria financeira</option>
+              <option>Agro</option>
+              <option>Setor público</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="ct-interesse">Assunto</label>
+            <select id="ct-interesse" name="interesse" required data-interest-select>
+              <option value="">Selecione</option>
+              <option value="checklist">Checklist de recuperação / Herta Protect</option>
+              <option value="data">Dados e indicadores (Data / Insight)</option>
+              <option value="billing">Piloto do Herta Billing</option>
+              <option value="gateway">Herta Gateway (gateway de pagamento)</option>
+              <option value="outro">Outro assunto</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="ct-msg">Mensagem <span class="opt">(opcional)</span></label>
+            <textarea id="ct-msg" name="mensagem" placeholder="Qual desafio você quer resolver?"></textarea>
+          </div>
+          <div class="field field--full">
+            <label class="consent"><input type="checkbox" name="consentimento" value="sim" required> Concordo em receber contato da HertaCloud sobre esta solicitação. Usaremos estes dados apenas para responder.</label>
+          </div>
+          <div class="form__foot">
+            <button class="btn btn--primary" type="submit"><svg class="i"><use href="#i-send"/></svg> Enviar mensagem</button>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="logo" href="#topo" aria-label="HertaCloud, voltar ao início">
+          <svg class="logo__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+          <span class="logo__word">Herta<span>Cloud</span></span>
+        </a>
+        <p>Proteção de dados e inteligência de negócios. Continuidade para operar. Clareza para decidir.</p>
+      </div>
+      <div>
+        <h4>Soluções</h4>
+        <ul>
+          <li><a href="#protect">Herta Protect</a></li>
+          <li><a href="#solucoes">Herta Data e Insight</a></li>
+          <li><a href="#billing">Herta Billing</a></li>
+          <li><a href="#gateway">Herta Gateway <span class="badge badge--orange badge--xs">Em breve</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#como-trabalhamos">Como trabalhamos</a></li>
+          <li><a href="#para-quem">Para quem</a></li>
+          <li><a href="#marca">A marca</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#contato">Formulário de contato</a></li>
+          <li><a href="#gateway-interesse">Lista do Herta Gateway</a></li>
+          <li data-channel="email" hidden><a href="#"><span data-channel-text></span></a></li>
+          <li data-channel="instagram" hidden><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> HertaCloud. Todos os direitos reservados.</span>
+      <span>Interfaces e exemplos exibidos nesta página são ilustrativos.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /*
+   * CONFIGURAÇÃO — preencher antes de publicar (somente canais já operacionais e testados).
+   *   formEndpoint: URL que aceita POST de formulário (ex.: Formspree, Getform ou endpoint próprio).
+   *                 Se vazio, o envio abre o e-mail do visitante com a mensagem pronta para `email`.
+   *   email:        e-mail comercial (ex.: contato@seudominio.com.br).
+   *   whatsapp:     número com DDI e DDD, só dígitos (ex.: 5561999999999).
+   *   instagram:    URL completa do perfil, depois de confirmar o @.
+   */
+  var HERTA_CONFIG = {
+    formEndpoint: '',
+    email: '',
+    whatsapp: '',
+    instagram: ''
+  };
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Ano no rodapé
+  document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+
+  // Aviso do Gateway (pode ser fechado; lembrado por visitante)
+  var announce = document.querySelector('[data-announce]');
+  var ANNOUNCE_KEY = 'herta-aviso-gateway-fechado';
+  try { if (announce && localStorage.getItem(ANNOUNCE_KEY) === '1') announce.hidden = true; } catch (e) {}
+  var announceClose = document.querySelector('[data-announce-close]');
+  if (announceClose) {
+    announceClose.addEventListener('click', function () {
+      announce.hidden = true;
+      try { localStorage.setItem(ANNOUNCE_KEY, '1'); } catch (e) {}
+    });
+  }
+
+  // Menu mobile
+  var header = document.querySelector('[data-header]');
+  var nav = document.querySelector('[data-nav]');
+  var toggle = document.querySelector('[data-nav-toggle]');
+  function setMenu(open) {
+    nav.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.querySelector('.sr-only').textContent = open ? 'Fechar menu' : 'Abrir menu';
+  }
+  toggle.addEventListener('click', function () { setMenu(!nav.classList.contains('is-open')); });
+  nav.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav.classList.contains('is-open')) { setMenu(false); toggle.focus(); }
+  });
+
+  // Sombra do cabeçalho ao rolar
+  function onScroll() { header.classList.toggle('is-scrolled', window.scrollY > 8); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Link ativo no menu
+  var navLinks = Array.prototype.slice.call(nav.querySelectorAll('ul a[href^="#"]'));
+  if ('IntersectionObserver' in window) {
+    var sectionObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach(function (a) {
+          if (a.getAttribute('href') === '#' + entry.target.id) a.setAttribute('aria-current', 'true');
+          else a.removeAttribute('aria-current');
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    navLinks.forEach(function (a) {
+      var target = document.querySelector(a.getAttribute('href'));
+      if (target) sectionObserver.observe(target);
+    });
+  }
+
+  // Animações de entrada
+  var revealEls = document.querySelectorAll('.reveal');
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+  } else {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); revealObserver.unobserve(entry.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    revealEls.forEach(function (el) { revealObserver.observe(el); });
+  }
+  if (reduceMotion) {
+    document.querySelectorAll('svg').forEach(function (svg) { if (svg.pauseAnimations) svg.pauseAnimations(); });
+  }
+
+  // Botões que pré-selecionam o assunto do formulário de contato
+  var interestSelect = document.querySelector('[data-interest-select]');
+  document.querySelectorAll('[data-interest]').forEach(function (el) {
+    el.addEventListener('click', function () { if (interestSelect) interestSelect.value = el.getAttribute('data-interest'); });
+  });
+
+  // Canais de contato configurados
+  var channelHref = {
+    email: HERTA_CONFIG.email && 'mailto:' + HERTA_CONFIG.email,
+    whatsapp: HERTA_CONFIG.whatsapp && 'https://wa.me/' + HERTA_CONFIG.whatsapp.replace(/\D/g, ''),
+    instagram: HERTA_CONFIG.instagram
+  };
+  document.querySelectorAll('[data-channel]').forEach(function (li) {
+    var key = li.getAttribute('data-channel');
+    if (!channelHref[key]) return;
+    li.querySelector('a').href = channelHref[key];
+    var text = li.querySelector('[data-channel-text]');
+    if (text) text.textContent = HERTA_CONFIG.email;
+    li.hidden = false;
+  });
+  document.querySelectorAll('.channels').forEach(function (ul) {
+    ul.hidden = !ul.querySelector('li:not([hidden])');
+  });
+
+  // Formulários
+  function fieldLabel(form, name) {
+    var el = form.querySelector('[name="' + name + '"]');
+    if (!el) return name;
+    var fieldset = el.closest('fieldset');
+    if (fieldset && fieldset.querySelector('legend')) return fieldset.querySelector('legend').textContent.trim();
+    var label = el.id && form.querySelector('label[for="' + el.id + '"]');
+    return label ? label.childNodes[0].textContent.trim() : name;
+  }
+
+  function summarize(form) {
+    var data = new FormData(form);
+    var values = {};
+    data.forEach(function (value, key) {
+      if (key === 'consentimento' || !String(value).trim()) return;
+      values[key] = values[key] ? values[key] + ', ' + value : value;
+    });
+    return Object.keys(values).map(function (key) {
+      var el = form.querySelector('[name="' + key + '"]');
+      var shown = values[key];
+      if (el && el.tagName === 'SELECT' && el.selectedIndex > 0) shown = el.options[el.selectedIndex].text;
+      return fieldLabel(form, key) + ': ' + shown;
+    }).join('\n');
+  }
+
+  document.querySelectorAll('[data-form]').forEach(function (form) {
+    var status = form.querySelector('[data-form-status]');
+    var button = form.querySelector('[type="submit"]');
+
+    function setStatus(text, state) {
+      status.textContent = text;
+      if (state) status.setAttribute('data-state', state); else status.removeAttribute('data-state');
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        setStatus('Confira os campos obrigatórios.', 'error');
+        return;
+      }
+
+      if (HERTA_CONFIG.formEndpoint) {
+        button.disabled = true;
+        setStatus('Enviando…');
+        fetch(HERTA_CONFIG.formEndpoint, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+          .then(function (res) {
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            form.reset();
+            setStatus(form.getAttribute('data-success'), 'ok');
+          })
+          .catch(function () {
+            setStatus('Não foi possível enviar agora. Tente novamente em instantes' + (HERTA_CONFIG.email ? ' ou escreva para ' + HERTA_CONFIG.email : '') + '.', 'error');
+          })
+          .then(function () { button.disabled = false; });
+        return;
+      }
+
+      if (HERTA_CONFIG.email) {
+        window.location.href = 'mailto:' + HERTA_CONFIG.email +
+          '?subject=' + encodeURIComponent(form.getAttribute('data-subject')) +
+          '&body=' + encodeURIComponent(summarize(form));
+        setStatus('Abrimos seu aplicativo de e-mail com a mensagem pronta. É só enviar.', 'ok');
+        return;
+      }
+
+      console.warn('[HertaCloud] Configure formEndpoint ou email em HERTA_CONFIG (final do index.html).');
+      setStatus('O envio pelo site ainda não está disponível. Tente novamente em breve.', 'error');
+    });
+  });
+})();
+</script>
+</body>
+</html>
